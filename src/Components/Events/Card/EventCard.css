@@ -1,0 +1,83 @@
+.eventCardContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 500px;
+    min-width: 500px;
+    /* background-color: red; */
+    /* margin: 0px 30px !important; */
+}
+
+.eventCardBody{
+    width: 100%;
+}
+
+.eventCardImageWrapper{
+    position: relative;
+    background: #E5E1E6;
+    border-radius: 48px 48px 16px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 30px 0;
+}
+
+.eventCardImageWrapper>img{
+    width: 80%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.eventCardImageBg{
+    position: absolute;
+    width: calc(80% + 10px);
+    height: calc(80% + 10px);
+    border: 3px solid red;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.eventCardContainer:hover .eventCardImageBg{
+    filter: blur(10px);
+    background: black;
+}
+
+.eventCardTitleContainer{
+    background: #E5E1E6;
+    border-radius: 0px 0px 16px 16px;
+    font-family: "sportsball";
+    font-size: 24px;
+    color: #000000;
+    width: 80%;
+    align-self: center;
+    text-overflow: ellipsis;
+    padding: 0 0 10px 0;
+}
+
+.eventCardTitle{
+    text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    .eventCardContainer{
+        min-width: 250px;
+        width: 250px;
+    }
+
+    .eventCardImageWrapper>img{
+        width: 100%;
+        height: unset;
+    }
+
+    .eventCardImageWrapper{
+        padding: 20px;
+        border-radius: 15px 15px 8px 8px;
+    }
+
+    .eventCardTitleContainer{
+        font-size: 12px;
+        border-radius: 0px 0px 8px 8px;
+    }
+}

@@ -1,0 +1,88 @@
+  
+
+.mainContentGL{
+  /* position: relative; */
+position: relative;
+/* background-color: blue; */
+  /* width: 90%  ; */
+margin: 0 auto;
+padding: 0;
+  /* top: 250px; */
+/* width: 100% !important; */
+   
+  /* max-height: 400vh; */ 
+  padding-bottom: 100px;
+}
+
+.carouselGL{
+  margin:auto;
+  display: flex;
+  /* width: 90%; */
+  margin: 10px 0px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.guestLecture{
+  padding: 15px 50px;
+  margin: 70px 0px;
+  border-radius: 0 70px 0 70px;
+  border: 5px solid white;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  width: 85%;
+}
+
+.col-md-8{
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.headingGL{
+  /* position: absolute; */
+  font-size:3rem;
+  margin: 20px auto !important;
+/* background-color: red; */
+width: 100% !important;
+font-weight: 500;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+  /* text-align: center; */
+  color: #fff;
+  text-align: center;
+}
+
+.faSocial{
+font-size: 2rem;
+margin: 0;
+/* background-color: blue; */
+}
+
+.profile-card{
+    min-width: 350px;
+    max-width: 350px;
+    background: rgba(255, 255, 255, 0.2);
+    height: 500px;
+}
+
+.profile-header{
+  display: flex;
+  align-items: center;
+}
+
+.profile-header img{
+  width: 100px;
+  height: 100px;
+}
+
+@media only screen and (max-width: 450px) {
+  .profile-card{
+    min-width: 290px;
+    max-width: 290px;
+  }
+}

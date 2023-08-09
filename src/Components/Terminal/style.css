@@ -1,0 +1,27 @@
+.terminal-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.terminal-top{
+    display: flex;
+    color: #6E7681;
+    padding: 20px;
+    border-bottom: 1px solid #30363D;
+}
+
+.terminal-top div{
+    margin-right: 15px;
+}
+
+.terminal-body{
+    background-color: #0D1117;
+    height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .terminal-top{
+        font-size: 10px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,36 @@
+.notificationItemContainer {
+  margin: 8px;
+  padding: 8px;
+  margin-left: 0px;
+  /* padding-left: 0px; */
+}
+
+.notificationItem {
+  font-family: 'JetBrainsMono';
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+@media only screen and (max-width: 700px) {
+  .notificationItem{
+      font-size: 20px;
+      line-height: unset;
+  }
+  .notificationItemContainer{
+    padding: 5px 8px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .notificationItem{
+      font-size: 15px;
+      line-height: unset;
+  }
+  .notificationItemContainer{
+    padding: 5px 8px;
+    margin: 0px;
+  }
+}

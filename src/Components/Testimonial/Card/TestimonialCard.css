@@ -1,0 +1,87 @@
+.testimonialCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  min-width: 400px;
+  margin: 30px 20px;
+  transition: all 0.5s;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.testimonialCardContainer:hover {
+  scale: 1.05;
+}
+
+.testimonicalCardContent {
+  font-family: 'segoeui';
+  font-weight: 400;
+  font-size: 16px;
+  padding: 12px;
+  /* margin: 0px; */
+  background-color: #ffffff;
+  color: #000;
+  transition: all 0.5s;
+  min-height: 310px;
+}
+
+.testimonialCardContainer:hover .testimonicalCardContent{  
+  color: white;
+  background-color: #1C1C1C;
+}
+
+.testimonicalCardPerson {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 12px;
+  padding: 12px;
+}
+
+.testimonialCardPersonAvatar {
+  margin: 12px;
+}
+
+.testimonialCardPersonName {
+  font-family: 'JetBrainsMono';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 63px;
+}
+
+.personBranch {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 700px) {
+  .testimonicalCardContent{
+    font-size: 14px;
+  }
+  .testimonialCardContainer{
+    min-width: 300px;
+    margin: 20px;
+  }
+  .testimonicalCardPerson{
+    padding: 0px;
+    margin: 0px;
+  }
+  .testimonialCardPersonName{
+    font-size: 14px;
+  }
+  .personBranch{
+    font-size: 12px;
+  }
+  .testimonialCardPersonAvatar{
+    width: 80px;
+  }
+  .testimonialCardPersonName{
+    line-height: unset;
+  }
+  .testimonicalCardPerson{
+    margin: 20px 0px;
+  }
+}
