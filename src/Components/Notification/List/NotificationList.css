@@ -10,11 +10,13 @@
 }
 
 .recentNotifs {
-  color: #FFF;
-  font-size: 32px;
-  font-weight: 600;
+  color: #E5E1E6;
+  text-shadow: 3px 3px #BFBFBF;
+  font-size: 36px;
+  font-weight: 800;
   font-family: "JetBrainsMono";
   padding-left: 8px;
+  padding-top: 35px;
 }
 
 @media only screen and (max-width: 700px) {

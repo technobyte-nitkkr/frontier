@@ -6,8 +6,8 @@ const HomePage = () => {
     <div className="homeContainer">
       <div className="homeLeftContainer">
         <div className="titleContainer">
-          <h1 className="techspardha"> TECHSPARDHA </h1>
-          <h3 className="festTheme"> PRISM OF POSSIBILITIES </h3>
+          <h1 className="techspardha"> TECHNOBYTE </h1>
+          <h3 className="festTheme"> NIT KURUKSHETRA </h3>
           {/* <div className="presentedBy">
             <div>Presented By:</div>
             <div>
