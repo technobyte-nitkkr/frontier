@@ -24,8 +24,30 @@ const Form = () => {
     setSelectedCounty(selectedCountry);
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Form submitted successfully!");
+      } else {
+        console.error("Form submission failed.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
   return (
-    <form className="flex flex-col text-black sm:pr-4">
+    <form className="flex flex-col text-black sm:pr-4" onSubmit={handleSubmit}>
       <input
         className="w-full bg-white my-4 h-12 placeholder:px-3 cursor-pointer px-2"
         type="text"
@@ -66,7 +88,10 @@ const Form = () => {
         placeholder="Please write your message here"
         className=" h-32 resize-none my-4 placeholder:px-3 cursor-pointer px-2"
       ></textarea>
-      <button className="text-white border-black my-8 bg-blue-500 h-12 w-auto">
+      <button
+        type="submit"
+        className="text-white border-black my-8 bg-blue-500 h-12 w-auto"
+      >
         Submit
       </button>
     </form>

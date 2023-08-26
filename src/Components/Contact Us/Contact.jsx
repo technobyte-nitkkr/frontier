@@ -5,7 +5,7 @@ import Form from "./Form";
 const Contact = () => {
   return (
     <div className="mainClass">
-      <h2 className="bold text-[35px] ">What is Technobyte 2023</h2>
+      <h2 className="bold text-[35px] ">What is Technobyte 2023?</h2>
       <p className="py-4 text-xl">
         Techspardha is the annual techno-managerial festival of National
         Institute of Technology, Kurukshetra. It started in 1995 as
