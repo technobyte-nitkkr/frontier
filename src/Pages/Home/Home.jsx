@@ -10,6 +10,7 @@ import Sponsors2 from "../../Components/Sponsors/Sponsors2";
 import TestimonialCarousel from "../../Components/Testimonial/Carousel/TestimonialCarousel";
 import TimeLine from "../../Components/Timeline/TimeLine";
 import "./Home.css";
+import GalleryCarousel from "../../Components/Gallery/Carousel/GalleryCarousel";
 
 const Home = (props) => {
   const { hash, key } = useLocation();
@@ -48,6 +49,7 @@ const Home = (props) => {
         heading={"About Techspardha"}
         element={<Registration showBtn={true} />}
       />
+      <Homecontainer heading={"Gallery"} element={<GalleryCarousel />} />
       <Homecontainer heading={"Event Categories"} element={<EventCarousel />} />
       <Homecontainer heading={"Guest Lectures"} element={<Lecture />} />
       <Homecontainer heading={"Meet Our Sponsors"} element={<Sponsors2 />} />
