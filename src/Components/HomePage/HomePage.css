@@ -1,15 +1,22 @@
 /*CSS for top level sections start here*/
 
 .homeContainer {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 12rem;
 }
 
-.homeLeftContainer {
-  padding-top: 50px;
+.homeRightContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  background-image: url("/assets/GroupPhoto.png");
+  background-repeat: no-repeat;
+  background-size: 69%;
+  background-position: right top;
 }
 
 .titleContainer {
@@ -17,189 +24,109 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  /* padding: 15em; */
+  margin-top: 12rem;
 }
-
-.elementContainer {
-  height: 70%;
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.elementContainer img{
-  max-width: 500px;
-}
-
 
 /*CSS for top level sections ends here*/
 
-.techspardha {
+.technobyte {
   font-family: 'backto1982';
   color: #4C5EFF;
   font-weight: 400;
-  font-size: 85px;
+  font-size: 75px;
   font-style: normal;
-  line-height: 85px; 
-  /* margin: 8rem; */
+  line-height: 85px;
 }
 
-.festTheme {
+.NITKKR {
   font-family: "sportsball";
   color: #fff;
   text-shadow: 3px 3px #BFBFBF;
   font-style: normal;
   line-height: 34px;
   font-size: 28px;
-  margin-top: 25px;
   text-align: left;
-  /* margin: 4rem; */
   margin-top: 4rem;
   padding: 8px;
-}
-
-.presentedBy {
-  font-family: 'JetBrainsMono';
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 20px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding: 8px;
-  /* margin: 8px; */
-  margin-top: 4rem;
-  align-items: baseline;
-  justify-content: flex-start;
-}
-
-.presenter {
-  display: inline-block;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-/**/
-
-
-
-.elementSVG {
-  width: 90%;
 }
 
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1400px) {
-  .festTheme{
-      font-size: 25px;
-      margin-top: 0px;
+  .NITKKR{
+    font-size: 25px;
+    margin-top: 0px;
   }
-  .techspardha{
+  .technobyte{
     font-size: 65px;
-  }
-  .presentedBy{
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .presentedBy{
-    margin-top: 2rem;
-  }
-  .presentedBy div{
-    margin: 10px 0px;
-  }
-  .presentedBy img{
-    height: 20px;
   }
 }
 
 @media only screen and (max-width: 1100px) {
   .homeContainer{
-      flex-direction: column;
-      margin-top: 7rem;
+    flex-direction: column;
+    margin-top: 7rem;
   }
-  .homeLeftContainer{
-    padding-top: 1rem;
+  .titleContainer{
+    margin-top: 0;
   }
-  .festTheme{
-      font-size: 25px;
-      margin-top: 0px;
+  .NITKKR{
+    font-size: 25px;
   }
-  .techspardha{
+  .technobyte{
     font-size: 65px;
-  }
-  .presentedBy{
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .presentedBy{
-    margin-top: 2rem;
-  }
-  .presentedBy div{
-    margin: 10px 0px;
-  }
-  .presentedBy img{
-    height: 20px;
+    margin-top: 0px;
   }
 }
 
 @media only screen and (max-width: 700px) {
   .homeContainer{
-      flex-direction: column;
-      margin-top: 7rem;
-
+    flex-direction: column;
+    margin-top: 7rem;
   }
   .homeLeftContainer{
     padding-top: 1rem;
   }
-  .festTheme{
-      font-size: 20px;
-      margin-top: 0px;
+  .homeRightContainer{
+    background-image: none;
   }
-  .techspardha{
-    font-size: 48px;
-  }
-  .presentedBy{
-    flex-direction: column;
+  .NITKKR{
+    font-size: 20px;
     margin-top: 0px;
   }
-  .presentedBy div{
-    margin: 10px 0px;
-  }
-  .presentedBy img{
-    height: 20px;
+  .technobyte{
+    font-size: 48px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-    .homeContainer{
-      flex-direction: column;
-      margin-top: 7rem;
-    }
-    .homeLeftContainer{
-      padding-top: 1rem;
-    }
-    .festTheme{
-        font-size: 20px;
-        margin-top: 0px;
-    }
-    .techspardha{
-      font-size: 35px;
-    }
-    .presentedBy{
-      flex-direction: column;
-      margin-top: 0px;
-    }
-    .presentedBy div{
-      margin: 10px 0px;
-    }
-    .presentedBy img{
-      height: 20px;
-    }
+  .homeContainer{
+    flex-direction: column;
+    margin-top: 7rem;
+  }
+  .homeLeftContainer{
+    padding-top: 1rem;
+  }
+  .homeRightContainer{
+    background-image: none;
+  }
+  .NITKKR{
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  .technobyte{
+    font-size: 35px;
+  }
 }
 
 @media only screen and (max-width : 1100px) and (min-width : 900px) {
   .homeContainer{
-    margin-top: 12rem;
+    margin-top: 0rem;
+  }
+  .technobyte{
+    margin-top: 10rem;
+  }
+  .homeRightContainer{
+    background-size: 80%;
   }
 }

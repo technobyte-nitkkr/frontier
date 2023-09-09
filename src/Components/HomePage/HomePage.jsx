@@ -4,33 +4,13 @@ import "./HomePage.css";
 const HomePage = () => {
   return (
     <div className="homeContainer">
-      <div className="homeLeftContainer">
-        <div className="titleContainer">
-          <h1 className="techspardha"> TECHSPARDHA </h1>
-          <h3 className="festTheme"> PRISM OF POSSIBILITIES </h3>
-          {/* <div className="presentedBy">
-            <div>Presented By:</div>
-            <div>
-              <span className="presenterLogo">
-                {" "}
-                <img className="presenter" src="/assets/do.svg" />{" "}
-              </span>
-              <span className="presenterLogo">
-                {" "}
-                <img className="presenter" src="/assets/appwrite.svg" />{" "}
-              </span>
-              <span className="presenterLogo">
-                {" "}
-                <img className="presenter" src="/assets/docker.svg" />{" "}
-              </span>
-            </div>
-          </div> */}
-          <NotificationList />
-        </div>
-      </div>
       <div className="homeRightContainer">
-        <div className="elementContainer">
-          <img src="/assets/element.png" className="elementSVG" />
+        <div className="homeLeftContainer">
+          <div className="titleContainer">
+            <h1 className="technobyte"> TECHNOBYTE </h1>
+            <h3 className="NITKKR"> NIT KURUKSHETRA </h3>
+            <NotificationList />
+          </div>
         </div>
       </div>
     </div>
