@@ -2,8 +2,8 @@ import Countries from "./Countries";
 
 const Dropdown = ({ selectedCounty, handleCountyChange }) => {
   const handleDropdownChange = (e) => {
-    const selectedCountry = e.target.value;
-    handleCountyChange(selectedCountry);
+    const newCountry = e.target.value;
+    handleCountyChange(newCountry);
   };
 
   return (

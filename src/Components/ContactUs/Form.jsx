@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Dropdown from "./Dropdown";
+import emailjs from "emailjs-com";
+import Countries from "./Countries";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -26,21 +28,22 @@ const Form = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    console.log("Submitting form");
+    const dialCode = Countries.find(
+      (country) => country.name === selectedCounty
+    ).dial_code;
+    console.log(dialCode);
     try {
-      const response = await fetch("", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      await emailjs.send(
+        "service_5lzk86j",
+        "template_0i1kgqw",
+        {
+          ...formData,
+          phoneNumber: dialCode + " " + formData.phoneNumber,
         },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        console.log("Form submitted successfully!");
-      } else {
-        console.error("Form submission failed.");
-      }
+        "LQgJoiy1g4e-Pe70y"
+      );
+      console.log("Form submitted successfully!");
     } catch (error) {
       console.error("Error submitting form:", error);
     }
@@ -87,13 +90,16 @@ const Form = () => {
       <textarea
         placeholder="Please write your message here"
         className=" h-32 resize-none my-4 placeholder:px-3 cursor-pointer px-2"
+        onChange={(event) => handleInputChange(event, "message")}
       ></textarea>
-      <button
-        type="submit"
-        className="text-white border-black my-8 bg-blue-500 h-12 w-auto"
-      >
-        Submit
-      </button>
+      <div className="flex justify-center items-center h-[8rem]">
+        <button
+          type="submit"
+          className="bg-blue-500 text-white px-4 py-2 rounded-lg h-[4rem] w-full md:w-[12rem]"
+        >
+          Submit
+        </button>
+      </div>
     </form>
   );
 };
