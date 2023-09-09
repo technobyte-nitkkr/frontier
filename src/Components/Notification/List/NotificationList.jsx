@@ -40,7 +40,7 @@ const NotificationList = () => {
 
   return (
     <div className="notificationContainer">
-      <h2 className="recentNotifs"> Recent Notifications: </h2>
+      <h2 className="recentNotifs"> Upcoming Events: </h2>
       {isLoading ? (
         <NotificationItem title={"✨ Fetching Notifications"} />
       ) : (
