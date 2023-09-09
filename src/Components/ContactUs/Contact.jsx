@@ -5,7 +5,7 @@ import Form from "./Form";
 const Contact = () => {
   return (
     <div className="mainClass">
-      <h2 className="bold text-[35px] ">What is Technobyte 2023?</h2>
+      <h2 className="bold text-[35px] ">What is Technobyte?</h2>
       <p className="py-4 text-xl">
         Technobyte, the official society for Computer Science and Information
         Technology students at NIT Kurukshetra, stands as a beacon of
