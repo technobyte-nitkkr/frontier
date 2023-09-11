@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import EventCarousel from "../../Components/Events/Carousel/EventCarousel";
 import Homecontainer from "../../Components/Homecontainer/Homecontainer";
 import HomePage from "../../Components/HomePage/HomePage";
+import Gallery from "../../Components/Gallery/Gallery";
 import Lecture from "../../Components/Lectures/Lectures";
 import Registration from "../../Components/Registration/Registration";
 import Sponsors from "../../Components/Sponsors/Sponsors";
@@ -46,9 +47,10 @@ const Home = (props) => {
         <TimeLine />
       </div>
       <Homecontainer
-        heading={"About Techspardha"}
+        heading={"About technobyte"}
         element={<Registration showBtn={true} />}
       />
+      <Homecontainer heading={"Gallery"} element={<Gallery />} />
       <Homecontainer heading={"Event Categories"} element={<EventCarousel />} />
       <Homecontainer heading={"Guest Lectures"} element={<Lecture />} />
       <Homecontainer heading={"Meet Our Sponsors"} element={<Sponsors2 />} />

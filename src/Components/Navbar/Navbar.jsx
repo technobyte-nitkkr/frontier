@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import logo from "/public/TechnoLogo.png";
+import logo from "/assets/technobyte.png";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import { useGoogleLogin } from "@react-oauth/google";
@@ -49,7 +49,7 @@ export default function Navbar({ setProfileVisible }) {
     <nav className="nav">
       {/* <TimeLine show={isOpen} onClickOutside={closeOverlay} /> */}
       <Link to="/" className="logoLink">
-        <img src={logo} alt="Technobyte" className="tb-logo" />
+        <img src={logo} alt="technobyte" className="ts-logo" />
       </Link>
 
       <div
