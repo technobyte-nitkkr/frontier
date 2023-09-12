@@ -21,9 +21,9 @@ const About = () => {
     
     <div className="aboutPageContainer"  >
       <span id="aboutElementHelper1"></span>
-      <Homecontainer heading={"About Techspardha"} element={<Registration />} />
+      <Homecontainer heading={"About technobyte"} element={<Registration />} />
       <Homecontainer
-        heading={"Install the Techspardha app"}
+        heading={"Install the technobyte app"}
         element={<InstallApp />}
       />
       <Homecontainer
@@ -31,7 +31,7 @@ const About = () => {
         element={<Glimpses />}
       />
       <Homecontainer
-        heading={"Checkout Techspardha'18 aftermovie"}
+        heading={"Checkout technobyte'18 aftermovie"}
         element={
           <div >
             <div className="video-responsive">
