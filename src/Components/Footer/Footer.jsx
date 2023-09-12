@@ -1,5 +1,4 @@
 import "./Footer.css";
-import logo from "/assets/technobyte.svg";
 import {
   FaGithub,
   FaFacebookSquare,

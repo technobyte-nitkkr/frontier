@@ -38,7 +38,7 @@ const Lecture = () => {
   const curosal = useRef();
   useEffect(() => {
     fetch(
-      "https://us-central1-technobyte-87928.cloudfunctions.net/api2/lectures",
+      "https://us-central1-techspardha-87928.cloudfunctions.net/api2/lectures",
       {
         method: "GET",
         headers: {
