@@ -25,7 +25,7 @@ export default function Modal({
                 className="modal-top-img"
               />
             </div>
-            <SearchBox title="https://techspardha.live" />
+            <SearchBox title="https://technobyte.live" />
             <div className="tag" onClick={onClickOutside}>
               <img
                 src="/assets/modal/add.png"

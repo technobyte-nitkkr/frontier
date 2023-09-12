@@ -15,7 +15,7 @@ export default function TeamDetails() {
     const getData = async () => {
       try {
         const res = await axios.get(
-          "https://us-central1-techspardha-87928.cloudfunctions.net/api2/contacts"
+          "https://us-central1-technobyte-87928.cloudfunctions.net/api2/contacts"
         );
         setData(await res.data.data.contacts.reverse());
         setPeople(res.data.data.contacts[0].people);
