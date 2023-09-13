@@ -29,8 +29,8 @@ export default function Modal({
 
             {
               year ?
-                <SearchBox title={`https://technobyte.live/Gallery/${year}`} /> :
-                <SearchBox title="https://technobyte.live" />
+                <SearchBox title={`https://technobyte.tech/Gallery/${year}`} /> :
+                <SearchBox title="https://technobyte.tech" />
             }
 
             <div className="tag" onClick={onClickOutside}>
