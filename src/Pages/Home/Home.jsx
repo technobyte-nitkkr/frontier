@@ -47,7 +47,7 @@ const Home = (props) => {
         <TimeLine />
       </div>
       <Homecontainer
-        heading={"About technobyte"}
+        heading={"About Technobyte"}
         element={<Registration showBtn={true} />}
       />
       <Homecontainer heading={"Gallery"} element={<Gallery />} />
