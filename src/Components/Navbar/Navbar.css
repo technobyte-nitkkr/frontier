@@ -122,7 +122,7 @@
     display: none;
 }
 
-@media (max-width:900px) {
+@media (min-width: 700px) and (max-width: 900px) {
     .logoLink {
         width: 100%;
     }
@@ -165,6 +165,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor:pointer
     }
     .navbar-links ul {
         width: 100%;
@@ -193,6 +194,90 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+    .nav-button button{
+        padding: 0px !important;
+        margin: 0px 10% !important;
+        width: 90%;
+        
+    }
+}
+
+@media (max-width:700px){
+
+    .logoLink {
+        width: 100%;
+    }
+    
+    .toggle-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .toggle-button .bar {
+        height: 3px;
+        width: 15px;
+        background-color: white;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        display: inline;
+    }
+    
+    .navbar-links {
+        visibility: hidden;
+        width: 100%;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+    }
+
+    .navMenus {
+        background-color: #555;
+        opacity: 80%;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        position: absolute;
+        align-items: unset;
+        top: calc(100% + 1rem);
+        left:10px;
+        height: auto;
+        padding:20px;
+    }
+
+    .Buttonclose{
+        font-size:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor:pointer;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .btnContainer{
+        display: none;
+        width: 150px;
+        margin-left: 15%;
+    }
+    .navbar-links ul li {
+        text-align: center;
+        height: 60px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .tb-logo {
+        width: 100%;
+    }
+
+    .nav {
+        height: 75px;
+        display: flex;
+        
     }
     .nav-button button{
         padding: 0px !important;

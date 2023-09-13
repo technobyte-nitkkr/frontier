@@ -8,6 +8,7 @@ import { useState } from "react";
 
 export default function Navbar({ setProfileVisible }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const login = useGoogleLogin({
     onSuccess: async (credentialResponse) => {
@@ -45,6 +46,10 @@ export default function Navbar({ setProfileVisible }) {
     // flow: "auth-code",
   });
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="nav">
       {/* <TimeLine show={isOpen} onClickOutside={closeOverlay} /> */}
@@ -52,25 +57,19 @@ export default function Navbar({ setProfileVisible }) {
         <img src={logo} alt="Technobyte" className="tb-logo" />
       </Link>
 
-      <div
-        href="#"
-        class="toggle-button"
-        onClick={() => {
-          document.getElementById("toToggle").style.visibility = "visible";
-        }}
-      >
+      <div href="#" className="toggle-button" onClick={toggleMenu}>
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-      <div className="navbar-links" id="toToggle">
+      <div
+        className="navbar-links"
+        id="toToggle"
+        onClick={toggleMenu}
+        style={{ visibility: isMenuOpen ? "visible" : "hidden" }}
+      >
         <ul className="navMenus">
-          <li
-            className="navbarItem Buttonclose"
-            onClick={() => {
-              document.getElementById("toToggle").style.visibility = "hidden";
-            }}
-          >
+          <li className="navbarItem Buttonclose" onClick={toggleMenu}>
             Close X
           </li>
           <li className="navbarItem">
