@@ -31,7 +31,7 @@ const About = () => {
         element={<Glimpses />}
       />
       <Homecontainer
-        heading={"Checkout Technobyte'18 aftermovie"}
+        heading={"Checkout Techspardha'18 aftermovie"}
         element={
           <div>
             <div className="video-responsive">
