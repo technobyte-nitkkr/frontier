@@ -10,6 +10,7 @@ export default function Modal({
   onClickOutside,
   show,
   isMenuOpen,
+  year
 }) {
   const [menuOpen, setMenuOpen] = useState(isMenuOpen);
   return (
@@ -25,7 +26,13 @@ export default function Modal({
                 className="modal-top-img"
               />
             </div>
-            <SearchBox title="https://technobyte.live" />
+
+            {
+              year ?
+                <SearchBox title={`https://technobyte.tech/Gallery/${year}`} /> :
+                <SearchBox title="https://technobyte.tech" />
+            }
+
             <div className="tag" onClick={onClickOutside}>
               <img
                 src="/assets/modal/add.png"

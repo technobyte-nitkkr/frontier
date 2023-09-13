@@ -20,3 +20,6 @@ opacity: 70%;
     display: none;  /* Safari and Chrome */
 }
 
+.GalleryList:hover{
+    overflow-x: hidden;
+}
