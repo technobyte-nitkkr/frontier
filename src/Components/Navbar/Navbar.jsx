@@ -4,11 +4,22 @@ import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import { useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar({ setProfileVisible }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(window.innerWidth > 900);
+
+  useEffect(() => {
+    const updateIsMenuOpen = () => {
+      setIsMenuOpen(window.innerWidth > 900);
+    };
+    updateIsMenuOpen();
+    window.addEventListener("resize", updateIsMenuOpen);
+    return () => {
+      window.removeEventListener("resize", updateIsMenuOpen);
+    };
+  }, []);
 
   const login = useGoogleLogin({
     onSuccess: async (credentialResponse) => {
