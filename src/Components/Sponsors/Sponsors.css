@@ -91,17 +91,6 @@
     }
 }
 
-@media only screen and (max-width: 800px){
-  .sponsorCarouselContainer{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sponsorIcon{
-    margin-top: 20px;
-  }
-}
-
 @media only screen and (max-width: 550px){
   .sponsorCarouselContainer{
     display: flex;
