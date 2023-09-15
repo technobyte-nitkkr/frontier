@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Button from "../Button/Button";
-import InputBox from "../InputBox/InputBox";
 import "./Sponsors.css";
 
 const Sponsors2 = () => {
