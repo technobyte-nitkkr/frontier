@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Dropdown from "./Dropdown";
 import emailjs from "emailjs-com";
 import Countries from "./Countries";
+import Button from "../Button/Button";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -93,12 +94,7 @@ const Form = () => {
         onChange={(event) => handleInputChange(event, "message")}
       ></textarea>
       <div className="flex justify-center items-center h-[8rem]">
-        <button
-          type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded-lg h-[4rem] w-full md:w-[12rem]"
-        >
-          Submit
-        </button>
+        <Button btnText="Submit" sty="h-[4rem] w-full md:w-[12rem]" />
       </div>
     </form>
   );

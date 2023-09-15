@@ -69,9 +69,6 @@ export default function Navbar({ setProfileVisible }) {
         style={{ visibility: isMenuOpen ? "visible" : "hidden" }}
       >
         <ul className="navMenus">
-          <li className="navbarItem Buttonclose" onClick={toggleMenu}>
-            Close X
-          </li>
           <li className="navbarItem">
             <Link to={{ pathname: "/", hash: "#events" }}>
               <span>EVENTS</span>
