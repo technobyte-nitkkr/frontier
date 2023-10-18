@@ -11,7 +11,7 @@ const TestimonialCarousel = () => {
   useEffect(()=>{
     setInterval(()=>{
       const elem = review.current;
-      var next = 0;zz
+      var next = 0;
       for(var i of elem.children){
         if(i.offsetLeft < elem.scrollLeft) next++;
       }
