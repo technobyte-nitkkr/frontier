@@ -9,7 +9,7 @@ const Gallery = () => {
   const [GalleryArray, SetGalleryArray] = useState([]);
 
   useEffect(() => {
-    SetGalleryArray(PhotoArray.data);
+    SetGalleryArray(PhotoArray.zz);
   }, []);
 
   const scArr = useRef();
