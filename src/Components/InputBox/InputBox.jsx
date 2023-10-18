@@ -1,8 +1,8 @@
 import "./InputBox.css";
 
-const InputBox = () => {
+const InputBox = (sty) => {
   return (
-    <div className="inpBoxContainer">
+    <div className={`inpBoxContainer ${sty}`}>
       <input className="inpBox" placeholder="Email Address" type={"email"} />
     </div>
   );

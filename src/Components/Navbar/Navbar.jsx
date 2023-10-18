@@ -4,10 +4,22 @@ import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import { useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar({ setProfileVisible }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(window.innerWidth > 900);
+
+  useEffect(() => {
+    const updateIsMenuOpen = () => {
+      setIsMenuOpen(window.innerWidth > 900);
+    };
+    updateIsMenuOpen();
+    window.addEventListener("resize", updateIsMenuOpen);
+    return () => {
+      window.removeEventListener("resize", updateIsMenuOpen);
+    };
+  }, []);
 
   const login = useGoogleLogin({
     onSuccess: async (credentialResponse) => {
@@ -45,6 +57,10 @@ export default function Navbar({ setProfileVisible }) {
     // flow: "auth-code",
   });
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="nav">
       {/* <TimeLine show={isOpen} onClickOutside={closeOverlay} /> */}
@@ -52,27 +68,18 @@ export default function Navbar({ setProfileVisible }) {
         <img src={logo} alt="Technobyte" className="tb-logo" />
       </Link>
 
-      <div
-        href="#"
-        class="toggle-button"
-        onClick={() => {
-          document.getElementById("toToggle").style.visibility = "visible";
-        }}
-      >
+      <div href="#" className="toggle-button" onClick={toggleMenu}>
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-      <div className="navbar-links" id="toToggle">
+      <div
+        className="navbar-links"
+        id="toToggle"
+        onClick={toggleMenu}
+        style={{ visibility: isMenuOpen ? "visible" : "hidden" }}
+      >
         <ul className="navMenus">
-          <li
-            className="navbarItem Buttonclose"
-            onClick={() => {
-              document.getElementById("toToggle").style.visibility = "hidden";
-            }}
-          >
-            Close X
-          </li>
           <li className="navbarItem">
             <Link to={{ pathname: "/", hash: "#events" }}>
               <span>EVENTS</span>
