@@ -76,7 +76,7 @@ export default function Navbar({ setProfileVisible }) {
       <div
         className="navbar-links"
         id="toToggle"
-        onClick={toggleMenu}
+        // onClick={toggleMenu} unecessary code
         style={{ visibility: isMenuOpen ? "visible" : "hidden" }}
       >
         <ul className="navMenus">
