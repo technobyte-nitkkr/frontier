@@ -29,6 +29,28 @@ const EventCarousel = () => {
   useEffect(() => {
     axios.get("/events/categories").then((res) => {
       const categories = res.data.data.categories;
+      const lectureCategory = {
+        categoryName: "Guest Lectures",
+        icon: "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg",
+        imgUrl:
+          "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg",
+      };
+      categories.push(lectureCategory);
+      const WorskhopsCategory = {
+        categoryName: "Workshops",
+        icon: "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg",
+        imgUrl:
+          "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg",
+      };
+      categories.push(WorskhopsCategory);
+      const SIHCategory = {
+        categoryName: "Smart India Hackathon",
+        icon: "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg",
+        imgUrl:
+          "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg",
+      };
+      categories.push(SIHCategory);
+
       setCategories(categories);
       setIsLoading(false);
     });

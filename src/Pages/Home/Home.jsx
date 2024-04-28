@@ -52,7 +52,7 @@ const Home = (props) => {
       />
       <Homecontainer heading={"Gallery"} element={<Gallery />} />
       <Homecontainer heading={"Event Categories"} element={<EventCarousel />} />
-      <Homecontainer heading={"Guest Lectures"} element={<Lecture />} />
+      {/* <Homecontainer heading={"Guest Lectures"} element={<Lecture />} /> */}
       <Homecontainer heading={"Meet Our Sponsors"} element={<Sponsors2 />} />
       <Homecontainer heading={"Contact Us"} element={<Contact />} />
       <Homecontainer

@@ -11,7 +11,7 @@ import { useState } from "react";
 import TimeLine from "./Components/Timeline/TimeLine";
 import "./App.css";
 
-const GCIDKeys = import.meta.env.VITE_GCID;
+
 
 function App() {
   const [isProfileVisible, setIsProfileVisible] = useState(false);
@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <GoogleOAuthProvider clientId={GCIDKeys}>
+    <GoogleOAuthProvider clientId="228323953310-c5k3b0v8uqueem76ae6sartu9l4dj45i.apps.googleusercontent.com">
       <div
         className="App"
         style={{
