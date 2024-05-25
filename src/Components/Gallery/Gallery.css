@@ -1,25 +1,25 @@
 .gallerytag{
-filter: brightness(0.4);
-opacity: 70%;
-}
-.hovertag:hover .gallerytag{
-    filter: brightness(1);
-    opacity: 100%;
-}
-.hovertag:hover .imgbg{
-    filter: brightness(1);
-    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
-    opacity: 100%;
-}
-
-.GalleryList {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-}
-.GalleryList::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
-
-.GalleryList:hover{
-    overflow-x: hidden;
-}
+    filter: brightness(0.4);
+    opacity: 70%;
+    }
+    .hovertag:hover .gallerytag{
+        filter: brightness(1);
+        opacity: 100%;
+    }
+    .hovertag:hover .imgbg{
+        filter: brightness(1);
+        filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+        opacity: 100%;
+    }
+    
+    .GalleryList {
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .GalleryList::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+    
+    .GalleryList:hover{
+        overflow-x: hidden;
+    }
