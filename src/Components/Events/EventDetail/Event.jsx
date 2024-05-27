@@ -30,6 +30,7 @@ export default function Event({ onClickOutside, show, selectedCategory }) {
         let eventData = {};
 
         categoryEvents.forEach((event) => {
+          event.
           eventData[event.eventName] = event;
         });
 
