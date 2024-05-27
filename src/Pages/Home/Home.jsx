@@ -8,7 +8,7 @@ import Lecture from "../../Components/Lectures/Lectures";
 import Registration from "../../Components/Registration/Registration";
 import Sponsors from "../../Components/Sponsors/Sponsors";
 import Sponsors2 from "../../Components/Sponsors/Sponsors2";
-import TestimonialCarousel from "../../Components/Testimonial/Carousel/TestimonialCarousel";
+// import TestimonialCarousel from "../../Components/Testimonial/Carousel/TestimonialCarousel";
 import TimeLine from "../../Components/Timeline/TimeLine";
 import "./Home.css";
 import Contact from "../../Components/ContactUs/Contact";
@@ -55,10 +55,10 @@ const Home = (props) => {
       <Homecontainer heading={"Guest Lectures"} element={<Lecture />} />
       <Homecontainer heading={"Meet Our Sponsors"} element={<Sponsors2 />} />
       <Homecontainer heading={"Contact Us"} element={<Contact />} />
-      <Homecontainer
+      {/* <Homecontainer
         heading={"Testimonials"}
         element={<TestimonialCarousel />}
-      />
+      /> */}
     </div>
   );
 };

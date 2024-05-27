@@ -28,12 +28,12 @@ const Sponsors2 = () => {
                   {sponsor?.sponsorSection}{" "}
                 </h3>
                 <div className="sponsorCarouselContainer">
-                  {sponsor?.sponsors.map((spons) => {
+                  {sponsor?.sponsors.map((spons, idx) => {
                     return (
-                      <div className="sponsorIcon">
+                      <div className="sponsorIcon" key={idx}>
                         {" "}
                         <a href={spons?.targetUrl}>
-                          <img src={spons?.imageUrl} />{" "}
+                          <img src={spons?.imageUrl} className="max-w-full max-h-full" />{" "}
                         </a>
                       </div>
                     );
