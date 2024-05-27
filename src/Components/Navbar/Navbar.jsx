@@ -1,13 +1,9 @@
 import "./Navbar.css";
 import logo from "/public/TechnoLogo.png";
-import Button from "../Button/Button";
 import { Link } from "react-router-dom";
-import { useGoogleLogin } from "@react-oauth/google";
-import axios from "axios";
 import { useEffect, useState } from "react";
 
-export default function Navbar({ setProfileVisible }) {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+export default function Navbar({  }) {
   const [isMenuOpen, setIsMenuOpen] = useState(window.innerWidth > 900);
 
   useEffect(() => {
@@ -21,44 +17,9 @@ export default function Navbar({ setProfileVisible }) {
     };
   }, []);
 
-  const login = useGoogleLogin({
-    onSuccess: async (credentialResponse) => {
-      //  get token id
-      const TOKEN = credentialResponse.access_token;
-
-      if (localStorage.getItem("ts20token")) {
-        const data = JSON.parse(localStorage.getItem("userdata"));
-        const token = localStorage.getItem("ts20token");
-        return;
-      }
-
-      try {
-        const response = await axios.post("/login", {
-          idToken: TOKEN,
-        });
-
-        const JWT = response.data.data.token;
-
-        // set token in local storage
-
-        localStorage.setItem("ts20token", JWT);
-        localStorage.setItem(
-          "userdata",
-          JSON.stringify(response.data.data.user)
-        );
-        setIsLoggedIn(true);
-      } catch (error) {
-        console.log(error);
-      }
-    },
-    onError: () => {
-      console.log("Login Failed");
-    },
-    // flow: "auth-code",
-  });
-
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    if(window.innerWidth < 900)
+      setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -104,28 +65,6 @@ export default function Navbar({ setProfileVisible }) {
             <a href="/team">
               <span>TEAM</span>
             </a>
-          </li>
-          <li className="navbarItem mr-4 nav-button">
-            {localStorage.getItem("ts20token") || isLoggedIn ? (
-              <span
-                onClick={() => {
-                  setProfileVisible(true);
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                Profile
-              </span>
-            ) : (
-              <span onClick={() => login()}>
-                <Button
-                  symbol={"▶️"}
-                  btnText={"Login"}
-                  btnHeight="100%"
-                  btnWidth={"100%"}
-                  onClick={() => login()}
-                />
-              </span>
-            )}
           </li>
         </ul>
       </div>

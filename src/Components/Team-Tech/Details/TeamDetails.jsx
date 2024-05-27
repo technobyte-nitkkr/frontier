@@ -26,26 +26,9 @@ export default function TeamDetails() {
     };
     getData();
   }, []);
-
-  const changePeople = async (e) => {
-    try {
-      setCurrent(e.target.id);
-      for (var i = 0; i < data.length; i++) {
-        if (data[i].section === e.target.id) {
-          setIsLoading(true);
-          setPeople(data[i].people);
-          setTimeout(() => {
-            setIsLoading(false);
-          }, 500);
-        }
-      }
-    } catch (err) {
-      console.log(err);
-    }
-  };
   return (
     <div className="team-details">
-      <div className="team-links">
+      {/* <div className="team-links">
         {data
           ? data.map((x) => {
               return (
@@ -62,7 +45,7 @@ export default function TeamDetails() {
               );
             })
           : ""}
-      </div>
+      </div> */}
       <div ref={Ref} className="team-card-container">
         {!isLoading && people ? (
           people.map((x) => {

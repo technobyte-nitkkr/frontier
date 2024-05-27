@@ -59,7 +59,7 @@ const Lecture = () => {
       const elem = curosal.current;
       var next = 0;
       for (var i of elem.children) {
-        if (i.offsetLeft < elem.scrollLeft){ 
+        if (i.offsetLeft < elem.scrollLeft) {
           next++;
         }
       }
@@ -93,13 +93,12 @@ const Lecture = () => {
 export default Lecture;
 
 const GuestCard = ({ index, item, className }) => {
+  useEffect(() => { console.log(item) }, [])
   return (
     <div className="backGround">
       <img className="image" src={item.imageUrl} />
       <div className="details">
         <h1 className="name">{item.name}</h1>
-        <h1 className="designation">Designation</h1>
-        <img className="company" src="../../../public/assets/amazon.svg" />
       </div>
     </div>
   )

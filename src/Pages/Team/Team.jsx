@@ -11,7 +11,6 @@ export default function Team() {
         you the Spectacle, that is technobyte, the tech-fest of NIT
         kurukshetra."
       </div>
-      <TeamAnimation />
       <TeamDetails />
     </div>
   );
