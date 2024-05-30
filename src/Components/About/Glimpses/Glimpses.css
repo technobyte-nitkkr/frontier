@@ -9,3 +9,11 @@
   margin-left: 75px;
   margin-right: 75px;
 }
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color:aqua;
+  opacity: 1;
+}

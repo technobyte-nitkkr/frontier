@@ -31,7 +31,7 @@ const About = () => {
         element={<Glimpses />}
       />
       <Homecontainer
-        heading={"Checkout technobyte'18 aftermovie"}
+        heading={"Checkout technobyte's Youtube channel"}
         element={
           <div>
             <div className="video-responsive">
@@ -51,6 +51,14 @@ const About = () => {
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/AnuM0qunBRE?si=m0h8XwOr9WxaSARO" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>

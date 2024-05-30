@@ -2,17 +2,14 @@ import { useState, useEffect } from "react";
 import "./NotificationList.css";
 import NotificationItem from "../Item/NotificationItem";
 import Button from "../../Button/Button";
-import TimeLine from "../../Timeline/TimeLine";
 import axios from "axios";
-import Event from "../../Events/EventDetail/Event";
-import ExpandedNotification from "../ExpandedNotification/ExpandedNotification";
 
-const NotificationList = () => {
-  const [isOpen, setIsOpen] = useState(false);
+
+const NotificationList = ({setIsOpen}) => {
+
   const [notifs, setNotifs] = useState([]);
   const [expandedObj, setExpandedObj] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const closeOverlay = () => setIsOpen(false);
 
   useEffect(() => {
     axios.get("/notification").then((res) => {
@@ -39,43 +36,40 @@ const NotificationList = () => {
   }, []);
 
   return (
-    <div className="notificationContainer">
-      <h2 className="recentNotifs"> Upcoming Events: </h2>
-      {isLoading ? (
-        <NotificationItem title={"✨ Fetching Notifications"} />
-      ) : (
-        <>
-          {" "}
-          {Object.keys(expandedObj).map((notif, key) => (
-            <div
-              onClick={() => {
-                setIsOpen(true);
-              }}
-              key={key}
-            >
-              <NotificationItem
-                title={notif}
-                content={notif.description}
+      <div className="notificationContainer">
+        <h2 className="recentNotifs"> Upcoming Events: </h2>
+        {isLoading ? (
+          <NotificationItem title={"✨ Fetching Notifications"} />
+        ) : (
+          <>
+            {" "}
+            {Object.keys(expandedObj).map((notif, key) => (
+              <div
+                onClick={() => {
+                  setIsOpen(true);
+                }}
                 key={key}
-              />
-            </div>
-          ))}
-        </>
-      )}
+              >
+                <NotificationItem
+                  title={notif}
+                  content={notif.description}
+                  key={key}
+                />
+              </div>
+            ))}
+          </>
+        )}
 
-      <div
-        className="notificationBtnContainer"
-        id="aboutElementHelper"
-        onClick={() => {
-          setIsOpen(true);
-        }}
-      >
-        <Button btnText="View them all" />
+        <div
+          className="notificationBtnContainer"
+          id="aboutElementHelper"
+          onClick={() => {
+            setIsOpen(true);
+          }}
+        >
+          <Button btnText="View them all" />
+        </div>
       </div>
-      {isOpen && (
-        <ExpandedNotification show={isOpen} onClickOutside={closeOverlay} />
-      )}
-    </div>
   );
 };
 

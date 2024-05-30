@@ -15,7 +15,7 @@ export default function Registration1({ showBtn }) {
         to create interest among students in different domains. Its renowned
         reputation is upheld through the organization of TECHSPARDHA, North
         India's largest technical fest. In which they conduct different events
-        like <b>HACKSHETRA , EXCALIBUR, GAMESTATION , ENCODER, CHATBOT </b>.
+        like <b>HACKSHETRA, EXCALIBUR, GAMESTATION, ENCODER, DESIGNATHON, WEBHUNT and BLACKBOX </b>.
         <br></br> Beyond
         these flagship event, Technobyte consistently conducts workshops,
         classes, and guest lectures, providing members with cutting-edge

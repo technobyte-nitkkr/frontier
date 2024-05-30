@@ -30,11 +30,11 @@ export default function Event({ onClickOutside, show, selectedCategory }) {
         let eventData = {};
 
         categoryEvents.forEach((event) => {
-          event.
           eventData[event.eventName] = event;
         });
 
         setEvents(eventData);
+        console.log(eventData);
         setEvent(Object.keys(eventData)[0]);
         setTimeout(() => setIsFetching(false), 500);
       });
@@ -55,6 +55,7 @@ export default function Event({ onClickOutside, show, selectedCategory }) {
       setCurrentCategory(Object.keys(categories)[0]);
       onCategorySelect(selectedCategory ? selectedCategory : currentCategory);
       selectedCategory = null;
+      console.log(categoryWiseEvents);
       setIsLoading(false);
     });
   }, []);
@@ -109,6 +110,7 @@ const EventDesc = ({ events, event, eventsData, isFetching }) => {
                       currentEvent === e ? "event-indivi-active" : ""
                     }`}
                     onClick={() => {
+                      console.log(e);
                       setSwitchingCurrentEvent(true);
                       setCurrentEvent(e);
                       setTimeout(() => setSwitchingCurrentEvent(false), 1000);

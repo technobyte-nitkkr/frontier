@@ -38,7 +38,7 @@ export default function Modal({
                 src="/assets/modal/add.png"
                 alt=""
                 className="modal-top-img"
-                style={{ transform: "rotate(45deg)" }}
+                style={{ transform: "rotate(45deg)", cursor: "pointer"}}
               />
             </div>
           </div>
