@@ -2,15 +2,9 @@ import "./Footer.css";
 import {
   FaGithub,
   FaFacebookSquare,
-  FaTwitter,
   FaLinkedinIn,
-  FaYoutube,
-  FaTwitch,
-  FaTiktok,
-  FaCopyright,
   FaInstagram,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (

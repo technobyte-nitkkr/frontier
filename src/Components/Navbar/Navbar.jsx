@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import logo from "/public/TechnoLogo.png";
+import logo from "/TechnoLogo.png";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 

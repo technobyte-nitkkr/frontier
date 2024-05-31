@@ -1,9 +1,7 @@
 import EventCard from "../Card/EventCard";
 import Event from "../EventDetail/Event";
 import Button from "../../Button/Button";
-
 import { useState, useEffect, useRef } from "react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "./EventCarousel.css";
@@ -11,19 +9,10 @@ import axios from "axios";
 
 const EventCarousel = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const [categories, setCategories] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-
-  // const [selectedCategory, setSelectedCategory] = useState(null);
-
   const selectedCategory = useRef("Astronomy");
-
   const closeOverlay = () => setIsOpen(false);
-  const configs = {
-    animate: true,
-  };
-
   const event = useRef();
 
   useEffect(() => {
@@ -47,11 +36,6 @@ const EventCarousel = () => {
         elem.scrollLeft = 0;
     }, 2000);
   }, []);
-
-  // useEffect(() => {
-  //   return selectedCategory ? setIsOpen(true) : setIsOpen(false);
-  // }, [selectedCategory]);
-
   return (
     <div>
       <div className="carouselCardContainer scroll-smooth" ref={event}>
@@ -86,13 +70,11 @@ const EventCarousel = () => {
       >
         <Button btnText="View them all" />
       </div>
-      {/* <Overlay configs={configs} isOpen={isOpen} closeOverlay={closeOverlay}> */}
       <Event
         show={isOpen}
         onClickOutside={closeOverlay}
         selectedCategory={selectedCategory.current}
       />
-      {/* </Overlay> */}
     </div>
   );
 };

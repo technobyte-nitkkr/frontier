@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import Gallery_bg from '/public/assets/Gallery/Gallery_bg_all.png'
+import React, { useState } from 'react'
+import Gallery_bg from '/assets/Gallery/Gallery_bg_all.png'
 import './Gallery.css';
 import ExpandedGallery from './ExpandedGallery';
 

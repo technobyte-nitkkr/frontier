@@ -9,7 +9,7 @@ export default function TeamDetails() {
   const [people, setPeople] = useState();
   const [isLoading, setIsLoading] = useState(false);
   const [current, setCurrent] = useState("final-year");
-  const [page, setPage] = useState(1);
+  // const [page, setPage] = useState(1);
   const Ref = useRef();
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export default function TeamDetails() {
         {!isLoading && people ? (
           people.map((x, idx) => {
             return (
-              (x.page === page) &&
+              // (x.page === page) &&
               <div className="nft" style={{ padding: "5px", margin: "20px" }} key={idx}>
                 <div className="team-card-main">
                   <img className="tokenImage placeholder-img" src={x.imageUrl} alt="post-holder" />
@@ -64,30 +64,30 @@ export default function TeamDetails() {
           <BouncingDotsLoader />
         )}
       </div>
-        < div className="team-links">
-          <button
-            id={"final-year"}
-            onClick={() => {
-              page > 1 &&
-                setPage(page - 1);
-            }}
-            className="teams"
-            style={{ color: "white" }}
-          >
-            {"<---"}Prev
-          </button>
-          <button
-            id={"pre-final-year"}
-            onClick={() => {
-              page < (current == "pre-final-year"?3:2) &&
-                setPage(page + 1);
-            }}
-            className="teams"
-            style={{ color: "white" }}
-          >
-            Next{"--->"}
-          </button>
-        </div>
+      {/* < div className="team-links">
+        <button
+          id={"final-year"}
+          onClick={() => {
+            page > 1 &&
+              setPage(page - 1);
+          }}
+          className="teams"
+          style={{ color: "white" }}
+        >
+          {"<---"}Prev
+        </button>
+        <button
+          id={"pre-final-year"}
+          onClick={() => {
+            page < (current == "pre-final-year" ? 3 : 2) &&
+              setPage(page + 1);
+          }}
+          className="teams"
+          style={{ color: "white" }}
+        >
+          Next{"--->"}
+        </button>
+      </div> */}
     </div >
   );
 }

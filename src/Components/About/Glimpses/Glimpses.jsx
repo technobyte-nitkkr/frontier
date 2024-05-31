@@ -3,7 +3,6 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./Glimpses.css";
-
 import img1 from "/assets/about_carousal/1.jpg";
 import img2 from "/assets/about_carousal/2.jpg";
 import img3 from "/assets/about_carousal/3.jpg";
