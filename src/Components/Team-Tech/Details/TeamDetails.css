@@ -49,6 +49,11 @@
   padding: 1%;
   cursor: pointer;
 }
+.teams:hover {
+  background: #4890ff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
 
 .team-card-container {
   /* border: 2px solid white; */

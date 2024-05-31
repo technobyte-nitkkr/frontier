@@ -1,39 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Lectures.css";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination, Navigation } from "swiper";
-
-function useWindowSize() {
-  const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
-  });
-  const curosal = useRef()
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-  return windowSize;
-}
 
 const Lecture = () => {
   const [guestList, SetGuestList] = useState([]);
-  const scrollref = useRef(null);
-  const size = useWindowSize();
-  var lectures = [];
   const [expanded, setExpanded] = useState(0);
   const curosal = useRef();
   useEffect(() => {
@@ -49,7 +20,6 @@ const Lecture = () => {
     )
       .then((res) => res.json())
       .then((data) => {
-        lectures = data.data.lectures;
         SetGuestList(data.data.lectures);
         console.log(data);
       })
@@ -92,7 +62,7 @@ const Lecture = () => {
 
 export default Lecture;
 
-const GuestCard = ({ index, item, className }) => {
+const GuestCard = ({ item }) => {
   useEffect(() => { console.log(item) }, [])
   return (
     <div className="backGround">
@@ -103,36 +73,3 @@ const GuestCard = ({ index, item, className }) => {
     </div>
   )
 }
-
-// const GuestCard = ({index, item, className})=>{
-//   return(
-//   <div key={index} className={"profile-card p-4 m-4 flex flex-col "+className}>
-//     <div className="profile-header pb-4">
-//       <img src={item.imageUrl} className="mr-4"/>
-//       <div className="flex flex-col items-start">
-//         <h1 className="text-xl font-normal text-left">{item.name}</h1>
-//         <h2 className="text-md text-gray-400">{item.date}</h2>
-//       </div>
-//     </div>
-//     <div class="profile-bio overflow-y-scroll bg-[#1C1C1C] p-2 mb-6 h-full">
-//           {item.desc}
-//     </div>
-//     <ul class="profile-social-links flex justify-evenly mb-4">
-//       <li>
-//         <a href={item?.insta}>
-//           <FaInstagram className="faSocial" />
-//         </a>
-//       </li>
-//       <li>
-//         <a href={item?.linkedin}>
-//           <FaLinkedin className="faSocial" />
-//         </a>
-//       </li>
-//       <li>
-//         <a href={item?.facebook}>
-//           <FaFacebook className="faSocial" />
-//         </a>
-//       </li>
-//     </ul>
-//   </div>)
-// }

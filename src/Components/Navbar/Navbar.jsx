@@ -30,9 +30,9 @@ export default function Navbar({  }) {
       </Link>
 
       <div href="#" className="toggle-button" onClick={toggleMenu}>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </div>
       <div
         className="navbar-links"
