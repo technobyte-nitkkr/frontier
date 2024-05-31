@@ -2,127 +2,106 @@
     {
         "imageUrl": "https://i.ibb.co/N2gPx3c/IMG-20231114-170442-Aman-Anand.jpg",
         "name": "Aman Anand",
-        "post": "Convener",
-        "page": 1
+        "post": "Convener"
     },
     {
         "imageUrl": "https://i.ibb.co/Hg32yFK/Shahid.jpg",
         "name": "Shahid Raza",
-        "post": "Co-Convener",
-        "page": 1
+        "post": "Co-Convener"
     },
     {
-        "imageUrl": "https://i.ibb.co/b6Rxk4B/IMG-20240120-133554-Shruti-Goel.jpg",
+        "imageUrl": "https://i.ibb.co/SykPY5T/Shruti.jpg",
         "name": "Shruti Goel",
-        "post": "Co-Convener",
-        "page": 1
+        "post": "Co-Convener"
     },
     {
         "imageUrl": "https://i.ibb.co/MD5djHW/IMG-6540-Yash-Mittal.jpg",
         "name": "Yash Mittal",
-        "post": "Co-Convener",
-        "page": 1
+        "post": "Co-Convener"
     },
     {
         "imageUrl": "https://i.ibb.co/Z6yL1Nr/IMG-20221208-015044-314-Rahul-Rathore.jpg",
         "name": "Rahul Rathore",
-        "post": "Co-Convener",
-        "page": 1
+        "post": "Co-Convener"
     },
     {
         "imageUrl": "https://i.ibb.co/tPbYQyS/Pransu.jpg",
         "name": "Pransu Yadav",
-        "post": "Media Head",
-        "page": 1
-    },
-    {
-        "imageUrl": "https://i.ibb.co/2FdhX7Q/Shubh.jpg",
-        "name": "Shubh Jain",
-        "post": "EP Head",
-        "page": 1
+        "post": "Media Head"
     },
     {
         "imageUrl": "https://i.ibb.co/0fMfy3x/Aman-Saini.jpg",
         "name": "Aman Saini",
-        "post": "Sponsership Head",
-        "page": 1
+        "post": "Sponsership Head"
     },
     {
-        "imageUrl": "https://i.ibb.co/Z6yL1Nr/IMG-20221208-015044-314-Rahul-Rathore.jpg",
+        "imageUrl": "https://i.ibb.co/H7kqXHx/Bhagat.jpg",
         "name": "Bhagat",
-        "post": "IP Head",
-        "page": 1
+        "post": "IP Head"
     },
     {
         "imageUrl": "https://i.ibb.co/bNCPH0p/Muskan.jpg",
         "name": "Muskan",
-        "post": "PR Head",
-        "page": 1
+        "post": "PR Head"
     },
     {
         "imageUrl": "https://i.ibb.co/Z6yL1Nr/IMG-20221208-015044-314-Rahul-Rathore.jpg",
         "name": "Aniket",
-        "post": "Event Head",
-        "page": 2
+        "post": "Event Head"
     },
     {
         "imageUrl": "https://i.ibb.co/fFPV0z1/Ankit.jpg",
         "name": "Ankit",
-        "post": "Event Head",
-        "page": 2
+        "post": "Event Head"
     },
     {
         "imageUrl": "https://i.ibb.co/Z6yL1Nr/IMG-20221208-015044-314-Rahul-Rathore.jpg",
         "name": "Ankit Beniwal",
-        "post": "Event Head",
-        "page": 2
+        "post": "Event Head"
     },
     {
         "imageUrl": "https://i.ibb.co/Pr0gL16/Deepak.jpg",
         "name": "Deepak",
-        "post": "Event Head",
-        "page": 2
+        "post": "Event Head"
     },
     {
         "imageUrl": "https://i.ibb.co/swWLk2q/Ishika.jpg",
         "name": "Ishika Bansal",
-        "post": "Event Head",
-        "page": 2
+        "post": "Event Head"
     },
     {
         "imageUrl": "https://i.ibb.co/Z6yL1Nr/IMG-20221208-015044-314-Rahul-Rathore.jpg",
         "name": "Krish Jindal",
-        "post": "Event Head",
-        "page": 2
+        "post": "Event Head"
     },
     {
         "imageUrl": "https://i.ibb.co/C8HFpj9/Mayank.jpg",
         "name": "Mayank",
-        "post": "Event Head",
-        "page": 2
+        "post": "Event Head"
     },
     {
         "imageUrl": "https://i.ibb.co/TPFDGLP/Natasha.jpg",
         "name": "Natasha",
-        "post": "Event Head",
-        "page": 2
+        "post": "Event Head"
     },
     {
         "imageUrl": "https://i.ibb.co/DC3b5Q0/Rajat.jpg",
         "name": "Rajat Dhull",
-        "post": "Event Head",
-        "page": 2
+        "post": "Event Head"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/2FdhX7Q/Shubh.jpg",
+        "name": "Shubh Jain",
+        "post": "EP Head"
     },
     {
         "imageUrl": "https://i.ibb.co/fqmnGwp/Subhi.jpg",
         "name": "Subhi",
-        "post": "Event Head",
-        "page": 2
+        "post": "Event Head"
     },
     {
         "imageUrl": "https://i.ibb.co/Kx36d3T/Parth.jpg",
         "name": "Parth Taneja",
-        "post": "Event Head",
-        "page": 2
+        "post": "Event Head"
     }
 ]
