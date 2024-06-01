@@ -14,6 +14,7 @@ export default function TeamDetails() {
   useEffect(() => {
     const getData = async () => {
       setIsLoading(true);
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       current == "final-year" ? setPeople(team) : setPeople(team2);
       setIsLoading(false);
     };
@@ -49,7 +50,7 @@ export default function TeamDetails() {
             return (
               <div className="nft" style={{ padding: "5px", margin: "20px" }} key={idx}>
                 <div className="team-card-main">
-                  <img className="tokenImage placeholder-img" src={x.imageUrl} alt="post-holder" />
+                  <img className="tokenImage placeholder-img" src={x.imageUrl} alt="team" />
                   <h2 className="person-name">{x.name}</h2>
                   <hr />
                   <p className="person-post">{x.post}</p>
