@@ -33,9 +33,9 @@ const Gallery = () => {
       <div className="mainContentGallery">
         <div className="GalleryList flex overflow-x-scroll scroll-smooth  pb-12" ref={scArr}>
           {
-            GalleryArray.map((element) => {
+            GalleryArray.map((element,idx) => {
               return (
-                <GalleryComponent item={element} className={"galleryCard snap-center"} />
+                <GalleryComponent item={element} className={"galleryCard snap-center"} key={idx}/>
               )
             })}
         </div>

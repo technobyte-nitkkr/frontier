@@ -21,7 +21,7 @@ const Lecture = () => {
       .then((res) => res.json())
       .then((data) => {
         SetGuestList(data.data.lectures);
-        console.log(data);
+        // console.log(data);
       })
       .catch((err) => { });
 
@@ -49,7 +49,7 @@ const Lecture = () => {
           {
             guestList.map((item, index) => {
               return (
-                <GuestCard item={item} index={index} expanded={expanded} setExpanded={setExpanded} className={"lecture" + index} />
+                <GuestCard item={item} key={index} expanded={expanded} setExpanded={setExpanded} className={"lecture" + index} />
               )
             })
           }
@@ -63,7 +63,6 @@ const Lecture = () => {
 export default Lecture;
 
 const GuestCard = ({ item }) => {
-  useEffect(() => { console.log(item) }, [])
   return (
     <div className="backGround">
       <img className="image" src={item.imageUrl} />

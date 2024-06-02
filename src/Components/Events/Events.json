@@ -1,5 +1,32 @@
 {
     "Techspardha": {
+        "Designathon": {
+            "coordinators": [
+                {
+                    "coordinator_name": "Aman Saini",
+                    "coordinator_number": ""
+                },
+                {
+                    "coordinator_name": "Shubh",
+                    "coordinator_number": ""
+                },
+                {
+                    "coordinator_name": "Muskan",
+                    "coordinator_number": ""
+                }
+            ],
+            "description": "Get ready to unleash your creativity and innovation at our upcoming Designathon! 🎨💡 \nThis is not just a competition, it's an opportunity to enrich your portfolio and network with the best in the design community.🚀🌐 👥 Teams of 1-3 are welcome. Open to all students passionate about design. 🎓💼📝 Engage in real-world case study projects that will not only challenge you but also add value to your professional portfolio. 🌟📚",
+            "eventCategory": "Techspardha",
+            "eventName": "Designathon",
+            "flagship": "false",
+            "poster": "",
+            "rules": [
+                "Team size should be 1-3.",
+                "Inter year teams are allowed"
+            ],
+            "venue": "ECE Department",
+            "document": ""
+        },
         "Gamestation": {
             "coordinators": [
                 {
@@ -11,68 +38,62 @@
                     "coordinator_number": "8953478310"
                 }
             ],
-            "description": " Brace yourselves for Nitkkr's gaming extravaganza – GameStation 2024!👨🏻‍💻 Embark on a virtual adventure 🤩 starting from March 14th, where the pixels come alive and competition ignites 🤖. It's not just an esports event; it's a celebration of skills, strategy, and sheer gaming passion. Whether you're a seasoned player or a casual gamer, this is your arena 🎯. Join us for a gaming odyssey that transcends screens and sparks excitement 💻. Unleash your competitive spirit, forge new alliances, and claim victory 🏆 in the biggest esports event on the horizon 👑.\n\n📅 Dates: 14th to 17th March\n📍Venue: ED Hall\n\nSave the date, power up your consoles 🎮 , and let the games begin",
-            "document": "https://docs.google.com/forms/d/1vsca_DjRoi7i9AtGvm42XMRxhCzqnH0n_k7CVghDbVM/edit",
-            "endTime": 1710642600000,
-            "eventCategory": "Informals",
+            "description": "Brace yourselves for Nitkkr's gaming extravaganza – GameStation 2024!👨🏻‍💻 Embark on a virtual adventure 🤩 starting from March 14th, where the pixels come alive and competition ignites 🤖. It's not just an esports event; it's a celebration of skills, strategy, and sheer gaming passion. Whether you're a seasoned player or a casual gamer, this is your arena 🎯. Join us for a gaming odyssey that transcends screens and sparks excitement 💻. Unleash your competitive spirit, forge new alliances, and claim victory 🏆 in the biggest esports event on the horizon 👑.\n\n📅 Dates: 14th to 17th March\n📍Venue: ED Hall\n\nSave the date, power up your consoles 🎮 , and let the games begin",
+            "eventCategory": "Techspardha",
             "eventName": "Gamestation",
             "flagship": "false",
-            "poster": "https://i.ibb.co/3NB8z2M/blob.jpg",
+            "poster": "",
             "rules": [
-                "Rules of respective games will be enforced"
+                "Standard rules of programming contest will be enforced."
             ],
-            "startTime": 1710387000000,
-            "venue": "ED Hall"
+            "venue": "ED Hall",
+            "document": ""
         },
         "Webhunt": {
             "coordinators": [
                 {
-                    "coordinator_name": "Akshat",
-                    "coordinator_number": "7999910962"
+                    "coordinator_name": "Ishika",
+                    "coordinator_number": ""
                 },
                 {
-                    "coordinator_name": "Monika",
-                    "coordinator_number": "9602054424"
+                    "coordinator_name": "Ankit",
+                    "coordinator_number": ""
                 }
             ],
-            "description": "Everyone thinks of being a pirate 🥷🏻at some point in their life, so, we at TechSpardha’22 are back with WebHunt 🔎 to bring out the Jack Sparrow 🏴‍☠️ inside of you and find the Isle of Lusee 🏝 .\n\nYou'll be provided with some fun 👾and challenging riddles 🪄 from various fields, be it your favorite tv shows 📺, the games🎮 you play every day or just anything you can ever imagine of.\n\nWith Google  (who uses Bing? btw) at your disposal, search 🔍 anything you want to get to the answer.",
-            "document": "https://bit.ly/WebHunt2k22",
-            "endTime": 1674905400000,
-            "eventName": " WEBHUNT",
+            "description": "Everyone thinks of being a pirate 🥷🏻at some point in their life, so, we at TechSpardha’22 are back with WebHunt 🔎 to bring out the Jack Sparrow 🏴‍☠️ inside of you and find the Isle of Lusee 🏝 \n\nYou'll be provided with some fun 👾and challenging riddles 🪄 from various fields, be it your favorite tv shows 📺, the games🎮 you play every day or just anything you can ever imagine of.\n\nWith Google  (who uses Bing? btw) at your disposal, search 🔍 anything you want to get to the answer",
+            "document": "",
+            "eventName": "WEBHUNT",
             "flagship": "false",
-            "poster": "https://i.ibb.co/dksh32G/webhunt.jpg",
+            "poster": "",
             "rules": [
                 "Team size should be 2.",
                 "Inter year teams are allowed",
                 "Use of google is mandatory."
             ],
-            "startTime": 1674811800000,
             "venue": "Computer Engineering Department",
-            "eventCategory": "Online-Events"
+            "eventCategory": "Techspardha"
         },
         "Black Box": {
             "coordinators": [
                 {
-                    "coordinator_name": "Bhavesh Gupta",
+                    "coordinator_name": "",
                     "coordinator_number": "9521221162"
                 },
                 {
-                    "coordinator_name": "Renu",
+                    "coordinator_name": "",
                     "coordinator_number": "7082481332"
                 }
             ],
             "description": "Hola Sherlock's 🧐🧐\\nBring into play the principle of reversibility🔄 in your heads and pen down your arithmetic skills📝 to find the raw data as we are back with brainstorming🤯 event of the era , Black Box📦 at Techspardha 2K23!\\nPut your quizzing caps🤠 on and get ready to sweat to compete with amazing.",
             "document": "https://bit.ly/BlackBox23",
-            "endTime": 3211200000,
-            "eventCategory": "Programming",
+            "eventCategory": "Techspardha",
             "eventName": "Black Box",
             "flagship": "false",
             "poster": "https://i.ibb.co/CMDkkRJ/IMG-20230120-WA0047.jpg",
             "rules": [
                 "Standard rules of programming contest will be enforced.",
-                "Single Member Event."
+                "Dou Event."
             ],
-            "startTime": 1389600000,
             "venue": "CS Department 2"
         },
         "Encoder": {
@@ -89,7 +110,7 @@
             "description": "Impress FAANG by showcasing your coding skills in \"Encoder,\" as these tech giants often recruit from platforms like Code studio! 🌟🚀🧠\n\n🕰️Set your alarms and clear your schedule! On March 14th, 2024, at 9:00 P.M.,Technobyte will host a 2-hour coding marathon on code studio where you can test your skills against some of the brightest minds in the coding community. 🕰️\n\n🧠 Crack six brain-bending problems in 2 hours and prizes worth ₹4,000 & premium coding ninja merchandise. 🔥\n🧠👾This is your chance to embark on an exciting coding adventure, hone your skills, and connect with like-minded individuals who share your passion for technology. 🖥️💻\nSo, what are you waiting for? 🌟\nLet's dive into the world of coding and see where your talents can take you! 🚀🧠👾\n\n*Gform link*: https://forms.gle/6fzGjnaq9vzYxHhJ8\n*Link for registration*: http://tinyurl.com/CENITK14MARCH\n\n*It is mandatory to fill both form and register through above link for a valid participation*\n_Registration should be done using above links only_",
             "document": "https://forms.gle/6fzGjnaq9vzYxHhJ8",
             "endTime": 1710394200000,
-            "eventCategory": "Programming",
+            "eventCategory": "Techspardha",
             "eventName": "Encoder",
             "flagship": "false",
             "poster": "https://i.ibb.co/rtxTpyN/blob.jpg",
@@ -97,7 +118,6 @@
                 "Standard rules of programming contest will be enforced.",
                 "Single Member Event."
             ],
-            "startTime": 1710387000000,
             "venue": "https://forms.gle/6fzGjnaq9vzYxHhJ8"
         },
         "Excalibur": {
@@ -114,7 +134,7 @@
             "description": "\"The purpose of technology is not to confuse the brain, but to serve the body\"\n\nDo you consider yourself as the most competitive person in a room? Do challenges excite you? Are you interested in tickling your brain and fueling your grey matter to create an impact?\n\nEXCALIBUR, the flagship event of Technobyte gives you the opportunity to do all of this, along with winning exciting prizes for your innovative solutions.\nIf you want to showcase your analytical, technical and problem solving skills and get exposure to industry-leading ventures, create a team, participate and elevate your creativity.",
             "document": "https://bit.ly/Excal23",
             "endTime": 1710617400000,
-            "eventCategory": "Programming",
+            "eventCategory": "Techspardha",
             "eventName": "Excalibur",
             "flagship": "true",
             "poster": "https://i.ibb.co/zxVNpjR/blob.jpg",
@@ -142,8 +162,7 @@
             ],
             "description": "📢 Calling all developers! Get ready to transform your coffee☕ into code on the most thrilling tech battlefield – Hackshetra🤖, brought to you by Techspardha’24 at NIT Kurukshetra. Grab your laptops💻 and brace yourselves for 24 hours of non-stop coding excitement! Show off your development skills and compete for prizes🏆 worth 6K.\n\nAt Hackshetra, you'll face challenges based on themes💡 revealed on the spot. Choose your problem statements 🎯 and leverage cutting-edge software technologies to craft innovative solutions.\n\nNo prior experience is necessary – all you need is the passion to learn. Whether you're a beginner or a seasoned coder, this event is your chance to shine and unleash your creativity🧩. Get ready to dive into the action-packed tech battlefield!\n\nMark your calendars🗓️ for 9th–10th March, 2024. The event kicks off at 11 am sharp on 9th March in the 📍CCN block.",
             "document": "https://forms.gle/tksmA7DHExC1EwPv6",
-            "endTime": 1710048600000,
-            "eventCategory": "Programming",
+            "eventCategory": "Techspardha",
             "eventName": "Hackshetra",
             "flagship": "true",
             "poster": "https://i.ibb.co/9pXvS20/blob.jpg",
@@ -153,7 +172,6 @@
                 "Initial elimination based on proposed solutions and designs.",
                 "Second elimination evaluates progress made during the event."
             ],
-            "startTime": 1709962200000,
             "venue": "CCN"
         }
     },
@@ -161,28 +179,21 @@
         "SIH": {
             "coordinators": [
                 {
-                    "coordinator_name": "Aniket",
-                    "coordinator_number": "9818621746"
-                },
-                {
-                    "coordinator_name": "Mayank",
-                    "coordinator_number": "9910867228"
+                    "coordinator_name": "Technobyte",
+                    "coordinator_number": ""
                 }
             ],
-            "description": "📢 Calling all developers! Get ready to transform your coffee☕ into code on the most thrilling tech battlefield – Hackshetra🤖, brought to you by Techspardha’24 at NIT Kurukshetra. Grab your laptops💻 and brace yourselves for 24 hours of non-stop coding excitement! Show off your development skills and compete for prizes🏆 worth 6K.\n\nAt Hackshetra, you'll face challenges based on themes💡 revealed on the spot. Choose your problem statements 🎯 and leverage cutting-edge software technologies to craft innovative solutions.\n\nNo prior experience is necessary – all you need is the passion to learn. Whether you're a beginner or a seasoned coder, this event is your chance to shine and unleash your creativity🧩. Get ready to dive into the action-packed tech battlefield!\n\nMark your calendars🗓️ for 9th–10th March, 2024. The event kicks off at 11 am sharp on 9th March in the 📍CCN block.",
-            "document": "https://forms.gle/tksmA7DHExC1EwPv6",
-            "endTime": 1710048600000,
-            "eventCategory": "Programming",
-            "eventName": "Hackshetra",
+            "description": "",
+            "eventCategory": "Exclusive",
+            "eventName": "SIH",
             "flagship": "true",
-            "poster": "https://i.ibb.co/9pXvS20/blob.jpg",
+            "poster": "",
             "rules": [
                 "The only eligibility criteria to take part is to have will to learn🤓 and your creativity is the limit. Get ready to have one of the biggest learning experiences in just 24 hours!!! 🥳🔥",
-                "Team up (2-4 members)",
+                "Team up (3-5 members)",
                 "Initial elimination based on proposed solutions and designs.",
                 "Second elimination evaluates progress made during the event."
             ],
-            "startTime": 1709962200000,
             "venue": "CCN"
         }
     },
@@ -190,200 +201,172 @@
         "WebCraft": {
             "coordinators": [
                 {
-                    "coordinator_name": "Harshvardhan",
-                    "coordinator_number": "7909081798"
+                    "coordinator_name": "Tushar",
+                    "coordinator_number": ""
                 },
                 {
-                    "coordinator_name": "Vaibhav",
-                    "coordinator_number": "8239307242"
+                    "coordinator_name": "Sooraj",
+                    "coordinator_number": ""
+                },
+                {
+                    "coordinator_name": "Khushi",
+                    "coordinator_number": ""
+                },
+                {
+                    "coordinator_name": "Subhi",
+                    "coordinator_number": ""
+                },
+                {
+                    "coordinator_name": "Deepak",
+                    "coordinator_number": ""
+                },
+                {
+                    "coordinator_name": "Yash Mittal",
+                    "coordinator_number": ""
                 }
             ],
-            "description": "Hey everyone!✨\n\nTired of your hectic schedule? \nNow it's time to get some solace,\nTechspradha'22\nbrings you GAMEATHON🤩🥳\nAn online gaming event!\n\nIt's time to show your presence of mind as well as power of reflexes along with 200IQ gameplay🌚💪🏻\n\nJoin in our flagship games :\n\n👉 BGMI(You can also register as solo,duo,trio or squad but it will be a squad event!)\n👉 CHESS(Solo)\n\nSit right at your place and showcase your gaming skills😌\n💰 Win prize worth ₹10,000💰",
-            "document": "https://forms.gle/yo2qrJ5gR3TAmXW1A",
-            "endTime": 1674995400000,
-            "eventName": "GameAThon",
-            "flagship": "false",
-            "poster": "https://i.ibb.co/dgp17s8/IMG-20230118-WA0007.jpg",
-            "rules": [
-                "Rules of respective games will be enforced."
-            ],
-            "startTime": 1674790200000,
-            "venue": "Online",
-            "eventCategory": "Informals"
+            "description": "These classes are being organized once in aweek and were started on 26th August, 2023. It's main purpose is to promote coding culture in our college. Empower participants with hands-on skills in web development, covering design, codingand tools for creating impactful digital experiences. The target audience is first year and second year. The mentors are from B.Tech. Pre-Final and Final year students and around 250 students attend these classes.",
+            "document": "https://drive.google.com/drive/folders/1CNODegmuRLSYbefDaHm9vWZI3KFQalIvn? usp=sharing",
+            "eventName": "WebCraft",
+            "flagship": "true",
+            "poster": "",
+            "rules": [],
+            "venue": "L - Block",
+            "eventCategory": "Workshops"
         },
         "CP/DSA Classes": {
             "coordinators": [
                 {
-                    "coordinator_name": "Shahid",
-                    "coordinator_number": "9793401591"
+                    "coordinator_name": "Dev Mahajan",
+                    "coordinator_number": ""
                 },
                 {
-                    "coordinator_name": "Pransu",
-                    "coordinator_number": "8953478310"
+                    "coordinator_name": "Shantanu",
+                    "coordinator_number": ""
+                },
+                {
+                    "coordinator_name": "Deepak Kumar",
+                    "coordinator_number": ""
+                },
+                {
+                    "coordinator_name": "Subhi Kumari",
+                    "coordinator_number": ""
+                },
+                {
+                    "coordinator_name": "Krish Jindal",
+                    "coordinator_number": ""
+                },
+                {
+                    "coordinator_name": "Rahul",
+                    "coordinator_number": ""
                 }
             ],
-            "description": " Brace yourselves for Nitkkr's gaming extravaganza – GameStation 2024!👨🏻‍💻 Embark on a virtual adventure 🤩 starting from March 14th, where the pixels come alive and competition ignites 🤖. It's not just an esports event; it's a celebration of skills, strategy, and sheer gaming passion. Whether you're a seasoned player or a casual gamer, this is your arena 🎯. Join us for a gaming odyssey that transcends screens and sparks excitement 💻. Unleash your competitive spirit, forge new alliances, and claim victory 🏆 in the biggest esports event on the horizon 👑.\n\n📅 Dates: 14th to 17th March\n📍Venue: ED Hall\n\nSave the date, power up your consoles 🎮 , and let the games begin",
-            "document": "https://docs.google.com/forms/d/1vsca_DjRoi7i9AtGvm42XMRxhCzqnH0n_k7CVghDbVM/edit",
-            "endTime": 1710642600000,
-            "eventCategory": "Informals",
-            "eventName": "Gamestation",
-            "flagship": "false",
-            "poster": "https://i.ibb.co/3NB8z2M/blob.jpg",
-            "rules": [
-                "Rules of respective games will be enforced"
-            ],
-            "startTime": 1710387000000,
-            "venue": "ED Hall"
+            "description": "These classes are being organized once in a week and were started on 28th August, 2023. It's main purpose is to promote coding culture in our college. The topics that are covered in these classes include Competitive Programming (CP) and Data Structures &Algorithms (DSA). The target audience is second year and pre final year. The mentors are from B.Tech. Pre-Final and Final year students and around 100 students attend these classes.",
+            "document": "https://www.instagram.com/reel/CxYOdVNZTP/?igshid=MiMON2Q2NDBYg==",
+            "eventCategory": "Workshops",
+            "eventName": "CP/DSA Classes",
+            "flagship": "true",
+            "poster": "",
+            "venue": "L - Block"
         }
     },
     "Coding Contest": {
         "CodeRun": {
             "coordinators": [
                 {
-                    "coordinator_name": "Harshvardhan",
-                    "coordinator_number": "7909081798"
+                    "coordinator_name": "Dev Mahajan",
+                    "coordinator_number": ""
                 },
                 {
-                    "coordinator_name": "Vaibhav",
-                    "coordinator_number": "8239307242"
+                    "coordinator_name": "Rahul Sehgal",
+                    "coordinator_number": ""
+                },
+                {
+                    "coordinator_name": "Sahil Bhatia",
+                    "coordinator_number": ""
+                },
+                {
+                    "coordinator_name": "Shantanu",
+                    "coordinator_number": ""
                 }
             ],
-            "description": "Hey everyone!✨\n\nTired of your hectic schedule? \nNow it's time to get some solace,\nTechspradha'22\nbrings you GAMEATHON🤩🥳\nAn online gaming event!\n\nIt's time to show your presence of mind as well as power of reflexes along with 200IQ gameplay🌚💪🏻\n\nJoin in our flagship games :\n\n👉 BGMI(You can also register as solo,duo,trio or squad but it will be a squad event!)\n👉 CHESS(Solo)\n\nSit right at your place and showcase your gaming skills😌\n💰 Win prize worth ₹10,000💰",
-            "document": "https://forms.gle/yo2qrJ5gR3TAmXW1A",
-            "endTime": 1674995400000,
-            "eventName": "GameAThon",
-            "flagship": "false",
-            "poster": "https://i.ibb.co/dgp17s8/IMG-20230118-WA0007.jpg",
+            "description": "It is a series of coding contests based on competitive programming and DSA which is conducted biweekly. This contest series started on 13th November, 2022 and is still continuing. It was intended to promote coding culture in the institute. The problem setters are from Btech pre-final and final year and around 60-80 students participate in these contests.",
+            "eventName": "CodeRun",
+            "flagship": "true",
+            "poster": "",
             "rules": [
-                "Rules of respective games will be enforced."
+                "Standard rules of programming contest will be enforced.",
+                "Single Member Event."
             ],
-            "startTime": 1674790200000,
             "venue": "Online",
-            "eventCategory": "Informals"
-        },
-        "Coding Saturday / Soltion Sunday": {
-            "description": "The grand informal event where you get a chance to showcase your talent in singing, dancing, and what-not.",
-            "document": "",
-            "endTime": 1674916200000,
-            "eventName": "Wild Flower",
-            "flagship": "false",
-            "poster": "https://res.cloudinary.com/techspardha5/image/upload/v1674725684/techspardha22/events/ebbsfkj2us9tbe4upgit.png",
-            "startTime": 1674901800000,
-            "venue": "Jubliee Hall",
-            "eventCategory": "Informals"
+            "eventCategory": "Workshops"
         }
     },
-    "Permotional Posts": {
+    "Weekly Permotional Posts": {
         "Tech Tuesday": {
             "coordinators": [
                 {
-                    "coordinator_name": "Harshvardhan",
-                    "coordinator_number": "7909081798"
-                },
-                {
-                    "coordinator_name": "Vaibhav",
-                    "coordinator_number": "8239307242"
+                    "coordinator_name": "Media Team",
+                    "coordinator_number": ""
                 }
             ],
-            "description": "Hey everyone!✨\n\nTired of your hectic schedule? \nNow it's time to get some solace,\nTechspradha'22\nbrings you GAMEATHON🤩🥳\nAn online gaming event!\n\nIt's time to show your presence of mind as well as power of reflexes along with 200IQ gameplay🌚💪🏻\n\nJoin in our flagship games :\n\n👉 BGMI(You can also register as solo,duo,trio or squad but it will be a squad event!)\n👉 CHESS(Solo)\n\nSit right at your place and showcase your gaming skills😌\n💰 Win prize worth ₹10,000💰",
-            "document": "https://forms.gle/yo2qrJ5gR3TAmXW1A",
-            "endTime": 1674995400000,
-            "eventName": "GameAThon",
+            "description": "",
+            "eventName": "Tech Tuesday",
             "flagship": "false",
-            "poster": "https://i.ibb.co/dgp17s8/IMG-20230118-WA0007.jpg",
-            "rules": [
-                "Rules of respective games will be enforced."
-            ],
-            "startTime": 1674790200000,
-            "venue": "Online",
-            "eventCategory": "Informals"
+            "poster": "",
+            "eventCategory": "Weekly Permotional Posts"
         },
         "Reel Wednesday": {
             "coordinators": [
                 {
-                    "coordinator_name": "Shahid",
+                    "coordinator_name": "Media Team",
                     "coordinator_number": "9793401591"
-                },
-                {
-                    "coordinator_name": "Pransu",
-                    "coordinator_number": "8953478310"
                 }
             ],
-            "description": " Brace yourselves for Nitkkr's gaming extravaganza – GameStation 2024!👨🏻‍💻 Embark on a virtual adventure 🤩 starting from March 14th, where the pixels come alive and competition ignites 🤖. It's not just an esports event; it's a celebration of skills, strategy, and sheer gaming passion. Whether you're a seasoned player or a casual gamer, this is your arena 🎯. Join us for a gaming odyssey that transcends screens and sparks excitement 💻. Unleash your competitive spirit, forge new alliances, and claim victory 🏆 in the biggest esports event on the horizon 👑.\n\n📅 Dates: 14th to 17th March\n📍Venue: ED Hall\n\nSave the date, power up your consoles 🎮 , and let the games begin",
-            "document": "https://docs.google.com/forms/d/1vsca_DjRoi7i9AtGvm42XMRxhCzqnH0n_k7CVghDbVM/edit",
-            "endTime": 1710642600000,
-            "eventCategory": "Informals",
-            "eventName": "Gamestation",
+            "description": "",
+            "eventCategory": "Weekly Permotional Posts",
+            "eventName": "Reel Wednesday",
             "flagship": "false",
-            "poster": "https://i.ibb.co/3NB8z2M/blob.jpg",
-            "rules": [
-                "Rules of respective games will be enforced"
-            ],
-            "startTime": 1710387000000,
-            "venue": "ED Hall"
+            "poster": ""
         },
         "Thrusday Trivia": {
             "coordinators": [
                 {
-                    "coordinator_name": "Shubham",
-                    "coordinator_number": "8950113509"
-                },
-                {
-                    "coordinator_name": "Bhavya",
-                    "coordinator_number": "9306372595"
+                    "coordinator_name": "Media Team",
+                    "coordinator_number": ""
                 }
             ],
-            "description": "1. The teams have to present an innovative working model which will be judged by the teachers and the student judges. \n2. The working model can be hardware or software-based. \n3. The teams need to present their idea in the form of a PowerPoint presentation in case of \nthe unavailability of a working model. \n",
-            "document": "https://raw.githubusercontent.com/descifrador17/microbus_nitkkr/main/micro+innovator.pdf",
-            "endTime": 1650000600000,
-            "eventName": "MICRO INNOVATOR ",
+            "description": "",
+            "eventName": "Thrusday Trivia",
             "flagship": "false",
-            "poster": "https://res.cloudinary.com/techspardha-live/image/upload/v1649531054/techspardha/events/micro_innovator_uakd5f.png",
-            "rules": [
-                "ABSTRACT SUBMISSION: The entire idea and the details of the working model should be explained in the abstract with the help of diagrams and all the abstracts must be sent to the below mentioned Email address with the name of the abstract file as MICROINNOVATOR_ (Project Title). ",
-                "JUDGING CRITERIA: The teams will be judged on the basis of following criterion like-  Innovation of the project, Strategy and planning, Uniqueness of the idea, Usefulness of the idea and Presentation and project report. ",
-                "TEAM SPECIFICATIONS: A team of 3 members is allowed and the team members should decide a team representative. ",
-                "You can register by sending your team detail, idea details and abstract on microinnovator22@gmail.com"
-            ],
-            "startTime": 1649991600000,
-            "venue": "L - Block",
-            "eventCategory": "Informals"
+            "poster": "",
+            "eventCategory": "Weekly Permotional Posts"
         },
         "Coding Saturday": {
             "coordinators": [
                 {
-                    "coordinator_name": "Muskan",
-                    "coordinator_number": "7011872139"
-                },
-                {
-                    "coordinator_name": "Shivangi ",
-                    "coordinator_number": "7309914283"
+                    "coordinator_name": "Media Team",
+                    "coordinator_number": ""
                 }
             ],
-            "description": "Do you think you know your campus ?Well let's find out ,come join us in this fun and adventurous event we have brought up for you .\nNot all treasure is silver and gold mate ,but it can be far more exciting than that.\nSo gather your mates and participate in this hunt which can lead you to a lotta exciting prizes and heap up your cash collection.\n\nPro tip:No skills required despite just your team being a little sassy and massy.😜🥳\nThe event will have two quirky rounds.\n1.  In round 1 we have given a new twist to the traditional dumb charades which you'll  find worth your while.\n2.  About round 2 ,you'll know when you get there as  some things better be a secret.",
-            "document": "https://forms.gle/MXR8zpis4P34qX2G9",
-            "endTime": 1650180600000,
-            "eventName": "Treasure Hunt",
-            "flagship": "false",
-            "poster": "https://res.cloudinary.com/techspardha-live/image/upload/v1649938336/techspardha/events/IMG-20220411-WA0008_zygicx.jpg",
-            "rules": [
-                "You can register via the app as well as with the link of the Google form provided .",
-                "Registration is required in a team of 4."
-            ],
-            "startTime": 1650083400000,
-            "venue": "MBA/MCA BLOCK",
-            "eventCategory": "Informals"
-        },
-        "Soltion Sunday": {
-            "description": "Technical Debate ",
-            "document": "",
-            "endTime": 1649933460000,
-            "eventName": "Tug of words ",
+            "description": "CP/DSA based Coding Contest",
+            "eventName": "Coding Saturday",
             "flagship": "false",
             "poster": "",
-            "startTime": 1649928600000,
-            "venue": "MCA block ",
-            "eventCategory": "Informals"
+            "eventCategory": "Weekly Permotional Posts"
+        },
+        "Soltion Sunday": {
+            "coordinators": [
+                {
+                    "coordinator_name": "Media Team",
+                    "coordinator_number": ""
+                }
+            ],
+            "description": "Solution to the Coding Saturday",
+            "eventName": "Treasure Hunt",
+            "flagship": "false",
+            "poster": "",
+            "eventCategory": "Weekly Permotional Posts"
         }
     }
 }

@@ -29,11 +29,11 @@ const Form = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Submitting form");
+    // console.log("Submitting form");
     const dialCode = Countries.find(
       (country) => country.name === selectedCounty
     ).dial_code;
-    console.log(dialCode);
+    // console.log(dialCode);
     try {
       await emailjs.send(
         "service_5lzk86j",
@@ -44,7 +44,7 @@ const Form = () => {
         },
         "LQgJoiy1g4e-Pe70y"
       );
-      console.log("Form submitted successfully!");
+      // console.log("Form submitted successfully!");
     } catch (error) {
       console.error("Error submitting form:", error);
     }

@@ -1,10 +1,12 @@
-import axios from "axios";
+// import axios from "axios";
 import React, { useState } from "react";
 import { useEffect } from "react";
 import Modal from "../../Modal/Modal";
 import Terminal from "../../Terminal/Terminal";
 import GenericLoader from "../../Loader/GenericLoader";
 import "./style.css";
+import catgWiseEvent from "../Events.json";
+import EventCtg from "../data.json";
 
 export default function Event({ onClickOutside, show, selectedCategory }) {
   const [events, setEvents] = useState({});
@@ -14,51 +16,51 @@ export default function Event({ onClickOutside, show, selectedCategory }) {
   const [isFetching, setIsFetching] = useState(false);
   const [firstTimne, setFirstTime] = useState(true);
 
-  const [currentCategory, setCurrentCategory] = useState(
-    selectedCategory ? selectedCategory : "Astronomy"
-  );
-
   const onCategorySelect = (category) => {
     setIsFetching(true);
     setFirstTime(false);
-    axios
-      .get("/events/description", {
-        params: { eventCategory: category },
-      })
-      .then((res) => {
-        const categoryEvents = res.data.data.events;
-        let eventData = {};
+    // axios
+    //   .get("/events/description", {
+    //     params: { eventCategory: category },
+    //   })
+    //   .then((res) => {
+    //     const categoryEvents = res.data.data.events;
+    //     let eventData = {};
 
-        categoryEvents.forEach((event) => {
-          eventData[event.eventName] = event;
-        });
+    //     categoryEvents.forEach((event) => {
+    //       eventData[event.eventName] = event;
+    //     });
 
-        setEvents(eventData);
-        console.log(eventData);
-        setEvent(Object.keys(eventData)[0]);
-        setTimeout(() => setIsFetching(false), 500);
-      });
+    setEvents(catgWiseEvent[category]);
+    setEvent(Object.keys(catgWiseEvent[category])[0]);
+    setTimeout(() => setIsFetching(false), 500);
+    // });
   };
 
   useEffect(() => {
-    axios.get("/events").then((res) => {
-      const eventData = res.data.data.events;
-      let categories = {};
+    // axios.get("/events").then((res) => {
+    //   const eventData = res.data.data.events;
+    //   console.log(eventData);
+    //   let categories = {};
 
-      eventData.forEach((event) => {
-        if (!categories[event.eventCategory])
-          categories[event.eventCategory] = [event.eventName];
-        else categories[event.eventCategory].push(event.eventName);
-      });
-
-      setCategoryWiseEvents(categories);
-      setCurrentCategory(Object.keys(categories)[0]);
-      onCategorySelect(selectedCategory ? selectedCategory : currentCategory);
-      selectedCategory = null;
-      console.log(categoryWiseEvents);
-      setIsLoading(false);
-    });
+    //   eventData.forEach((event) => {
+    //     if (!categories[event.eventCategory])
+    //       categories[event.eventCategory] = [event.eventName];
+    //     else categories[event.eventCategory].push(event.eventName);
+    //   });
+    //   console.log(categories);
+    setCategoryWiseEvents(EventCtg.data);
+    onCategorySelect(selectedCategory);
+    // selectedCategory = null;
+    // console.log(categoryWiseEvents);
+    setIsLoading(false);
+    // });
   }, []);
+  useEffect(() => {
+    if (selectedCategory) {
+      onCategorySelect(selectedCategory);
+    }
+  }, [selectedCategory]);
 
   return (
     <>
@@ -74,7 +76,6 @@ export default function Event({ onClickOutside, show, selectedCategory }) {
               eventsData={events}
             />
           }
-
           menuItems={Object.keys(categoryWiseEvents)}
           onMenuClick={onCategorySelect}
           show={show}
@@ -90,7 +91,7 @@ const EventDesc = ({ events, event, eventsData, isFetching }) => {
   const [currentEvent, setCurrentEvent] = useState(event);
   const [switchingCurrentEvent, setSwitchingCurrentEvent] = useState(false);
 
-  useEffect(() => {}, [event, events, eventsData]);
+  useEffect(() => {setCurrentEvent(event)}, [event]);
 
   return (
     <div className="event-container">
@@ -106,15 +107,15 @@ const EventDesc = ({ events, event, eventsData, isFetching }) => {
               {events.map((e, ind) => {
                 return (
                   <div
-                    className={`event-indivi ${
-                      currentEvent === e ? "event-indivi-active" : ""
-                    }`}
+                    className={`event-indivi ${currentEvent === e ? "event-indivi-active" : ""
+                      }`}
                     onClick={() => {
-                      console.log(e);
+                      // console.log(e);
                       setSwitchingCurrentEvent(true);
                       setCurrentEvent(e);
                       setTimeout(() => setSwitchingCurrentEvent(false), 1000);
                     }}
+                    key={ind}
                   >
                     {ind < 9 ? "0" : ""}
                     {ind + 1} <div>{e}</div>
@@ -171,8 +172,8 @@ const EventDesc = ({ events, event, eventsData, isFetching }) => {
                 </p>
                 <p>
                   {">>"} Rules: <br />
-                  {eventsData[currentEvent]?.rules?.map((rule) => (
-                    <span>
+                  {eventsData[currentEvent]?.rules?.map((rule,idx) => (
+                    <span key={idx}>
                       {" "}
                       {">>"} {rule} <br />{" "}
                     </span>
@@ -180,8 +181,8 @@ const EventDesc = ({ events, event, eventsData, isFetching }) => {
                 </p>
                 <p>
                   {">>"} Cordiantors:  <br />
-                  {eventsData[currentEvent]?.coordinators?.map((Cord) => (
-                    <span>
+                  {eventsData[currentEvent]?.coordinators?.map((Cord,idx) => (
+                    <span key={idx}>
                       {" "}
                       {">>"} {Cord.coordinator_name} : <a href={`https://wa.me+91${Cord.coordinator_number}`}>{Cord.coordinator_number}</a> <br />{" "}
                     </span>
@@ -195,7 +196,7 @@ const EventDesc = ({ events, event, eventsData, isFetching }) => {
       </div>
       <div className="event-description">
         <div className="event-top event-name">
-          <img src="/TS_LOGO.svg" alt="" />
+          <img src="/logo.png" alt="" />
         </div>
         <div className="event-details">
           {switchingCurrentEvent || isFetching ? (

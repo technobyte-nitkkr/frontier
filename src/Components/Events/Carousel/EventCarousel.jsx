@@ -5,22 +5,26 @@ import { useState, useEffect, useRef } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./EventCarousel.css";
-import axios from "axios";
+// import axios from "axios";
+import catg from "./../EventsCatg.json";
 
 const EventCarousel = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [categories, setCategories] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const selectedCategory = useRef("Astronomy");
+  const [selectedCategory,setSelected] = useState("Techspardha");
   const closeOverlay = () => setIsOpen(false);
   const event = useRef();
 
   useEffect(() => {
-    axios.get("/events/categories").then((res) => {
-      const categories = res.data.data.categories;
-      setCategories(categories);
-      setIsLoading(false);
-    });
+    // axios.get("/events/categories").then((res) => {
+    //   const categories = res.data.data.categories;
+    //   console.log(categories);
+    //   setCategories(categories);
+    //   setIsLoading(false);
+    // });
+    setCategories(catg.data);
+    setIsLoading(false);
     setInterval(() => {
       const elem = event.current;
       var next = 0;
@@ -45,16 +49,16 @@ const EventCarousel = () => {
           categories.map((category, key) => {
             return (
               <div
+                key={key}
                 onClick={() => {
-                  selectedCategory.current = category.categoryName;
+                  setSelected(category.categoryName);
                   setIsOpen(true);
                 }}
-                style={{ marginLeft: "25px", marginRight: "25px" }}
+                style={{ marginLeft: "25px", marginRight: "25px", cursor: "pointer"}}
               >
                 <EventCard
                   eventImage={category.imgUrl}
                   eventTitle={category.categoryName}
-                  ref={selectedCategory}
                 />
               </div>
             );
@@ -73,7 +77,7 @@ const EventCarousel = () => {
       <Event
         show={isOpen}
         onClickOutside={closeOverlay}
-        selectedCategory={selectedCategory.current}
+        selectedCategory={selectedCategory}
       />
     </div>
   );

@@ -1,0 +1,31 @@
+{
+    "data": {
+        "Techspardha": [
+            "Excalubur",
+            "Hackshetra",
+            "Designathon",
+            "Gamestation",
+            "Black Box",
+            "Webhunt",
+            "Encoder"
+        ],
+        "Exclusive": [
+            "SIH"
+        ],
+        "Workshops": [
+            "WebCraft",
+            "CP/DSA Classes"
+        ],
+        "Coding Contest": [
+            "CodeRun",
+            "Coding Saturday / Soltion Sunday"
+        ],
+        "Weekly Permotional Posts": [
+            "Tech Tuesday",
+            "Reel Wednesday",
+            "Thrusday Trivia",
+            "Coding Saturday",
+            "Soltion Sunday"
+        ]
+    }
+}
