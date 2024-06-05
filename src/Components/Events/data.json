@@ -9,7 +9,7 @@
             "Webhunt",
             "Encoder"
         ],
-        "Exclusive": [
+        "Hackathons": [
             "SIH"
         ],
         "Workshops": [
@@ -17,10 +17,9 @@
             "CP/DSA Classes"
         ],
         "Coding Contest": [
-            "CodeRun",
-            "Coding Saturday / Soltion Sunday"
+            "CodeRun"
         ],
-        "Weekly Permotional Posts": [
+        "Weekly Posts": [
             "Tech Tuesday",
             "Reel Wednesday",
             "Thrusday Trivia",

@@ -4,28 +4,28 @@
             "coordinators": [
                 {
                     "coordinator_name": "Aman Saini",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 },
                 {
                     "coordinator_name": "Shubh",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 },
                 {
                     "coordinator_name": "Muskan",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 }
             ],
             "description": "Get ready to unleash your creativity and innovation at our upcoming Designathon! 🎨💡 \nThis is not just a competition, it's an opportunity to enrich your portfolio and network with the best in the design community.🚀🌐 👥 Teams of 1-3 are welcome. Open to all students passionate about design. 🎓💼📝 Engage in real-world case study projects that will not only challenge you but also add value to your professional portfolio. 🌟📚",
             "eventCategory": "Techspardha",
             "eventName": "Designathon",
             "flagship": "false",
-            "poster": "",
+            "poster": "https://i.ibb.co/DzBYkHy/Designathon.jpg",
             "rules": [
                 "Team size should be 1-3.",
                 "Inter year teams are allowed"
             ],
             "venue": "ECE Department",
-            "document": ""
+            "document": "-x-x-x-"
         },
         "Gamestation": {
             "coordinators": [
@@ -42,29 +42,29 @@
             "eventCategory": "Techspardha",
             "eventName": "Gamestation",
             "flagship": "false",
-            "poster": "",
+            "poster": "https://i.ibb.co/HXzLJvg/Gamestation-Valo.jpg",
             "rules": [
                 "Standard rules of programming contest will be enforced."
             ],
             "venue": "ED Hall",
-            "document": ""
+            "document": "-x-x-x-"
         },
         "Webhunt": {
             "coordinators": [
                 {
                     "coordinator_name": "Ishika",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 },
                 {
                     "coordinator_name": "Ankit",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 }
             ],
             "description": "Everyone thinks of being a pirate 🥷🏻at some point in their life, so, we at TechSpardha’22 are back with WebHunt 🔎 to bring out the Jack Sparrow 🏴‍☠️ inside of you and find the Isle of Lusee 🏝 \n\nYou'll be provided with some fun 👾and challenging riddles 🪄 from various fields, be it your favorite tv shows 📺, the games🎮 you play every day or just anything you can ever imagine of.\n\nWith Google  (who uses Bing? btw) at your disposal, search 🔍 anything you want to get to the answer",
-            "document": "",
+            "document": "-x-x-x-",
             "eventName": "WEBHUNT",
             "flagship": "false",
-            "poster": "",
+            "poster": "https://i.ibb.co/N6fnv09/Webhunt.jpg",
             "rules": [
                 "Team size should be 2.",
                 "Inter year teams are allowed",
@@ -76,11 +76,11 @@
         "Black Box": {
             "coordinators": [
                 {
-                    "coordinator_name": "",
+                    "coordinator_name": "-x-x-x-",
                     "coordinator_number": "9521221162"
                 },
                 {
-                    "coordinator_name": "",
+                    "coordinator_name": "-x-x-x-",
                     "coordinator_number": "7082481332"
                 }
             ],
@@ -89,7 +89,7 @@
             "eventCategory": "Techspardha",
             "eventName": "Black Box",
             "flagship": "false",
-            "poster": "https://i.ibb.co/CMDkkRJ/IMG-20230120-WA0047.jpg",
+            "poster": "https://i.ibb.co/Ykxvfy1/Blackbox.jpg",
             "rules": [
                 "Standard rules of programming contest will be enforced.",
                 "Dou Event."
@@ -113,7 +113,7 @@
             "eventCategory": "Techspardha",
             "eventName": "Encoder",
             "flagship": "false",
-            "poster": "https://i.ibb.co/rtxTpyN/blob.jpg",
+            "poster": "https://i.ibb.co/k3bjjNt/Encoder.jpg",
             "rules": [
                 "Standard rules of programming contest will be enforced.",
                 "Single Member Event."
@@ -137,7 +137,7 @@
             "eventCategory": "Techspardha",
             "eventName": "Excalibur",
             "flagship": "true",
-            "poster": "https://i.ibb.co/zxVNpjR/blob.jpg",
+            "poster": "https://i.ibb.co/X5tY0rt/Excalibur.jpg",
             "rules": [
                 "Use of Git is mandatory.",
                 "After completion, the event itself would have a presentation and a working demo of the project.",
@@ -165,7 +165,7 @@
             "eventCategory": "Techspardha",
             "eventName": "Hackshetra",
             "flagship": "true",
-            "poster": "https://i.ibb.co/9pXvS20/blob.jpg",
+            "poster": "https://i.ibb.co/2j3csWn/Hackshetra.jpg",
             "rules": [
                 "The only eligibility criteria to take part is to have will to learn🤓 and your creativity is the limit. Get ready to have one of the biggest learning experiences in just 24 hours!!! 🥳🔥",
                 "Team up (2-4 members)",
@@ -175,19 +175,19 @@
             "venue": "CCN"
         }
     },
-    "Exclusive": {
+    "Hackathons": {
         "SIH": {
             "coordinators": [
                 {
                     "coordinator_name": "Technobyte",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 }
             ],
-            "description": "",
+            "description": "-x-x-x-",
             "eventCategory": "Exclusive",
             "eventName": "SIH",
             "flagship": "true",
-            "poster": "",
+            "poster": "https://i.ibb.co/nQbyL10/SIH.jpg",
             "rules": [
                 "The only eligibility criteria to take part is to have will to learn🤓 and your creativity is the limit. Get ready to have one of the biggest learning experiences in just 24 hours!!! 🥳🔥",
                 "Team up (3-5 members)",
@@ -197,68 +197,88 @@
             "venue": "CCN"
         }
     },
+
+
+    
+    
+
     "Workshops": {
         "WebCraft": {
             "coordinators": [
                 {
-                    "coordinator_name": "Tushar",
-                    "coordinator_number": ""
-                },
-                {
-                    "coordinator_name": "Sooraj",
-                    "coordinator_number": ""
-                },
-                {
-                    "coordinator_name": "Khushi",
-                    "coordinator_number": ""
-                },
-                {
                     "coordinator_name": "Subhi",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 },
                 {
                     "coordinator_name": "Deepak",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 },
                 {
                     "coordinator_name": "Yash Mittal",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
+                },
+                {
+                    "coordinator_name": "Tushar",
+                    "coordinator_number": "9729697727"
+                },
+                {
+                    "coordinator_name": "Sooraj",
+                    "coordinator_number": "-x-x-x-"
+                },
+                {
+                    "coordinator_name": "Khushi",
+                    "coordinator_number": "-x-x-x-"
                 }
             ],
             "description": "These classes are being organized once in aweek and were started on 26th August, 2023. It's main purpose is to promote coding culture in our college. Empower participants with hands-on skills in web development, covering design, codingand tools for creating impactful digital experiences. The target audience is first year and second year. The mentors are from B.Tech. Pre-Final and Final year students and around 250 students attend these classes.",
             "document": "https://drive.google.com/drive/folders/1CNODegmuRLSYbefDaHm9vWZI3KFQalIvn? usp=sharing",
             "eventName": "WebCraft",
             "flagship": "true",
-            "poster": "",
+            "poster": "https://i.ibb.co/9HTVG15/Webcraft1.jpg",
             "rules": [],
             "venue": "L - Block",
             "eventCategory": "Workshops"
         },
+        "UP Skilling Workshops": {
+            "coordinators": [
+                {
+                    "coordinator_name": "Aman Saini",
+                    "coordinator_number": "-x-x-x-"
+                }
+            ],
+            "description": "-x-x-x-",
+            "document": "https://www.instagram.com/reel/CxYOdVNZTP/?igshid=MiMON2Q2NDBYg==",
+            "eventCategory": "Workshops",
+            "eventName": "CP/DSA Classes",
+            "flagship": "true",
+            "poster": "https://i.ibb.co/Sm9bQFc/UI-UX.jpg",
+            "venue": "L - Block"
+        },
         "CP/DSA Classes": {
             "coordinators": [
                 {
-                    "coordinator_name": "Dev Mahajan",
-                    "coordinator_number": ""
-                },
-                {
-                    "coordinator_name": "Shantanu",
-                    "coordinator_number": ""
-                },
-                {
                     "coordinator_name": "Deepak Kumar",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 },
                 {
                     "coordinator_name": "Subhi Kumari",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 },
                 {
                     "coordinator_name": "Krish Jindal",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 },
                 {
                     "coordinator_name": "Rahul",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
+                },
+                {
+                    "coordinator_name": "Dev Mahajan",
+                    "coordinator_number": "-x-x-x-"
+                },
+                {
+                    "coordinator_name": "Shantanu",
+                    "coordinator_number": "-x-x-x-"
                 }
             ],
             "description": "These classes are being organized once in a week and were started on 28th August, 2023. It's main purpose is to promote coding culture in our college. The topics that are covered in these classes include Competitive Programming (CP) and Data Structures &Algorithms (DSA). The target audience is second year and pre final year. The mentors are from B.Tech. Pre-Final and Final year students and around 100 students attend these classes.",
@@ -266,7 +286,7 @@
             "eventCategory": "Workshops",
             "eventName": "CP/DSA Classes",
             "flagship": "true",
-            "poster": "",
+            "poster": "https://i.ibb.co/yf8h162/CP-DSA.jpg",
             "venue": "L - Block"
         }
     },
@@ -275,25 +295,25 @@
             "coordinators": [
                 {
                     "coordinator_name": "Dev Mahajan",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 },
                 {
                     "coordinator_name": "Rahul Sehgal",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 },
                 {
                     "coordinator_name": "Sahil Bhatia",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 },
                 {
                     "coordinator_name": "Shantanu",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 }
             ],
             "description": "It is a series of coding contests based on competitive programming and DSA which is conducted biweekly. This contest series started on 13th November, 2022 and is still continuing. It was intended to promote coding culture in the institute. The problem setters are from Btech pre-final and final year and around 60-80 students participate in these contests.",
             "eventName": "CodeRun",
             "flagship": "true",
-            "poster": "",
+            "poster": "https://i.ibb.co/GsgFcCc/Coderun.jpg",
             "rules": [
                 "Standard rules of programming contest will be enforced.",
                 "Single Member Event."
@@ -302,19 +322,19 @@
             "eventCategory": "Workshops"
         }
     },
-    "Weekly Permotional Posts": {
+    "Weekly Posts": {
         "Tech Tuesday": {
             "coordinators": [
                 {
                     "coordinator_name": "Media Team",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 }
             ],
-            "description": "",
+            "description": "-x-x-x-",
             "eventName": "Tech Tuesday",
             "flagship": "false",
-            "poster": "",
-            "eventCategory": "Weekly Permotional Posts"
+            "poster": "https://i.ibb.co/JCP7QBY/tuesday.jpg",
+            "eventCategory": "Weekly Posts"
         },
         "Reel Wednesday": {
             "coordinators": [
@@ -323,50 +343,50 @@
                     "coordinator_number": "9793401591"
                 }
             ],
-            "description": "",
-            "eventCategory": "Weekly Permotional Posts",
+            "description": "-x-x-x-",
+            "eventCategory": "Weekly Posts",
             "eventName": "Reel Wednesday",
             "flagship": "false",
-            "poster": ""
+            "poster": "-x-x-x-"
         },
         "Thrusday Trivia": {
             "coordinators": [
                 {
                     "coordinator_name": "Media Team",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 }
             ],
-            "description": "",
+            "description": "-x-x-x-",
             "eventName": "Thrusday Trivia",
             "flagship": "false",
-            "poster": "",
-            "eventCategory": "Weekly Permotional Posts"
+            "poster": "https://i.ibb.co/0rMvjNv/thrusday.jpg",
+            "eventCategory": "Weekly Posts"
         },
         "Coding Saturday": {
             "coordinators": [
                 {
                     "coordinator_name": "Media Team",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 }
             ],
             "description": "CP/DSA based Coding Contest",
             "eventName": "Coding Saturday",
             "flagship": "false",
-            "poster": "",
-            "eventCategory": "Weekly Permotional Posts"
+            "poster": "https://i.ibb.co/KjKbcNK/saturday.jpg",
+            "eventCategory": "Weekly Posts"
         },
         "Soltion Sunday": {
             "coordinators": [
                 {
                     "coordinator_name": "Media Team",
-                    "coordinator_number": ""
+                    "coordinator_number": "-x-x-x-"
                 }
             ],
             "description": "Solution to the Coding Saturday",
-            "eventName": "Treasure Hunt",
+            "eventName": "Soltion Sunday",
             "flagship": "false",
-            "poster": "",
-            "eventCategory": "Weekly Permotional Posts"
+            "poster": "https://i.ibb.co/7pZ1gG0/Whats-App-Image-2024-06-05-at-14-14-35-500ef756.jpg",
+            "eventCategory": "Weekly Posts"
         }
     }
 }

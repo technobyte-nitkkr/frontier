@@ -2,13 +2,13 @@
     "data": [
         {
             "categoryName": "Techspardha",
-            "imgUrl": "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg",
-            "icon": "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg"
+            "imgUrl": "https://i.ibb.co/9NP4cNW/download.jpg",
+            "icon": "https://i.ibb.co/9NP4cNW/download.jpg"
         },
         {
-            "categoryName": "Exclusive",
-            "imgUrl": "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg",
-            "icon": "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg"
+            "categoryName": "Hackathons",
+            "imgUrl": "https://i.ibb.co/8sDTv9G/Daniel-Kim-0-1650897476639.png",
+            "icon": "https://i.ibb.co/8sDTv9G/Daniel-Kim-0-1650897476639.png"
         },
         {
             "categoryName": "Workshops",
@@ -17,13 +17,13 @@
         },
         {
             "categoryName": "Coding Contest",
-            "imgUrl": "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg",
-            "icon": "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg"
+            "imgUrl": "https://i.ibb.co/L1mbL8w/images.png",
+            "icon": "https://i.ibb.co/L1mbL8w/images.png"
         },
         {
-            "categoryName": "Weekly Permotional Posts",
-            "imgUrl": "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg",
-            "icon": "https://i.ibb.co/7NPW3mR/programming-and-coding-vector-19602452.jpg"
+            "categoryName": "Weekly Posts",
+            "imgUrl": "https://i.ibb.co/qp75Ttr/smm-icon-300x300.png",
+            "icon": "https://i.ibb.co/qp75Ttr/smm-icon-300x300.png"
         }
     ]
 }

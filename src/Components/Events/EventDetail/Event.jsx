@@ -91,7 +91,7 @@ const EventDesc = ({ events, event, eventsData, isFetching }) => {
   const [currentEvent, setCurrentEvent] = useState(event);
   const [switchingCurrentEvent, setSwitchingCurrentEvent] = useState(false);
 
-  useEffect(() => {setCurrentEvent(event)}, [event]);
+  useEffect(() => { setCurrentEvent(event) }, [event]);
 
   return (
     <div className="event-container">
@@ -129,20 +129,26 @@ const EventDesc = ({ events, event, eventsData, isFetching }) => {
           <Terminal
             element={
               <div style={{ fontFamily: "JetBrainsMono" }}>
-                <p>
-                  {">>"} venue: {eventsData[currentEvent]?.venue}{" "}
-                </p>
-                <p>
-                  {">>"} Start Time:{" "}
-                  {new Date(eventsData[currentEvent]?.startTime).toDateString()}{" "}
-                </p>
-                <p>
-                  {">>"} End Time:{" "}
-                  {new Date(eventsData[currentEvent]?.endTime).toDateString()}{" "}
-                </p>
-
-                <p>
-                  {/* <span
+                {eventsData[currentEvent]?.venue &&
+                  <p>
+                    {">>"} venue: {eventsData[currentEvent]?.venue}{" "}
+                  </p>
+                }
+                {eventsData[currentEvent]?.startTime &&
+                  <p>
+                    {">>"} Start Time:{" "}
+                    {new Date(eventsData[currentEvent]?.startTime).toDateString()}{" "}
+                  </p>
+                }
+                {eventsData[currentEvent]?.endTime &&
+                  <p>
+                    {">>"} End Time:{" "}
+                    {new Date(eventsData[currentEvent]?.endTime).toDateString()}{" "}
+                  </p>
+                }
+                {eventsData[currentEvent]?.document &&
+                  <p>
+                    {/* <span
                     onClick={() => {
                       axios
                         .put(
@@ -164,30 +170,35 @@ const EventDesc = ({ events, event, eventsData, isFetching }) => {
                         .catch((err) => alert(err));
                     }}
                   > */}
-                  <a href={eventsData[currentEvent]?.document}>
-                    {">>"}{" "}
-                    <u style={{ cursor: "pointer" }}> Registration link </u>
-                  </a>
-                  {/* </span> */}
-                </p>
-                <p>
-                  {">>"} Rules: <br />
-                  {eventsData[currentEvent]?.rules?.map((rule,idx) => (
-                    <span key={idx}>
-                      {" "}
-                      {">>"} {rule} <br />{" "}
-                    </span>
-                  ))}
-                </p>
-                <p>
-                  {">>"} Cordiantors:  <br />
-                  {eventsData[currentEvent]?.coordinators?.map((Cord,idx) => (
-                    <span key={idx}>
-                      {" "}
-                      {">>"} {Cord.coordinator_name} : <a href={`https://wa.me+91${Cord.coordinator_number}`}>{Cord.coordinator_number}</a> <br />{" "}
-                    </span>
-                  ))}
-                </p>
+                    <a href={eventsData[currentEvent]?.document}>
+                      {">>"}{" "}
+                      <u style={{ cursor: "pointer" }}> Registration link </u>
+                    </a>
+                    {/* </span> */}
+                  </p>
+                }
+                {eventsData[currentEvent]?.rules &&
+                  <p>
+                    {">>"} Rules: <br />
+                    {eventsData[currentEvent]?.rules?.map((rule, idx) => (
+                      <span key={idx}>
+                        {" "}
+                        {">>"} {rule} <br />{" "}
+                      </span>
+                    ))}
+                  </p>
+                }
+                {eventsData[currentEvent]?.coordinators &&
+                  <p>
+                    {">>"} Cordiantors:  <br />
+                    {eventsData[currentEvent]?.coordinators?.map((Cord, idx) => (
+                      <span key={idx}>
+                        {" "}
+                        {">>"} {Cord.coordinator_name} : <a href={`https://wa.me+91${Cord.coordinator_number}`}>{Cord.coordinator_number}</a> <br />{" "}
+                      </span>
+                    ))}
+                  </p>
+                }
               </div>
             }
 
