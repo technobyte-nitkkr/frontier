@@ -71,6 +71,11 @@ export default function Navbar({  }) {
               <span>TEAM</span>
             </a>
           </li>
+          <li className="navbarItem">
+            <a href="/dev">
+              <span>Dev-Team</span>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

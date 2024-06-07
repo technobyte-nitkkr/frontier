@@ -5,6 +5,7 @@ import Team from "./Pages/Team/Team";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import "swiper/css/bundle";
+import DevTeam from "./Pages/DevTeam/Team";
 import About from "./Pages/About/About";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import "./App.css";
@@ -37,6 +38,7 @@ function App() {
               <Route path="/" exact element={<Home />} />
               <Route path="/team" element={<Team />} />
               <Route path="/about" element={<About />} />
+              <Route path="/dev" element={<DevTeam />} />
             </Routes>
             <div>
               <Footer />
