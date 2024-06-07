@@ -47,6 +47,11 @@ export default function Navbar({  }) {
             </Link>
           </li>
           <li className="navbarItem">
+            <Link to={{ pathname: "/", hash: "#Gallery" }}>
+              <span>Gallery</span>
+            </Link>
+          </li>
+          <li className="navbarItem">
             <Link to={{ pathname: "/", hash: "#sponsors" }}>
               <span>SPONSORS</span>
             </Link>

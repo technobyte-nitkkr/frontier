@@ -21,6 +21,11 @@ const Home = (props) => {
             .getElementById("sponsorElementHelper")
             ?.scrollIntoView({ behavior: "smooth" });
           break;
+        case "#Gallery":
+          document
+            .getElementById("ContentGallery")
+            ?.scrollIntoView({ behavior: "smooth" });
+          break;
         case "#events":
           document
             .getElementById("eventElementHelper")

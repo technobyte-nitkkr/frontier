@@ -23,7 +23,7 @@ export default function Registration({ showBtn }) {
         Kurukshetra.🥳👨‍💻
       </p>
       {showBtn ? (
-        <div className="dwnBtn" id="eventElementHelper">
+        <div className="dwnBtn" >
           {/* <Link to="/about"> */}
           <a href="/about">
             <Button btnText={"Know more"} />

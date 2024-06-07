@@ -42,7 +42,7 @@ const EventCarousel = () => {
   }, []);
   return (
     <div>
-      <div className="carouselCardContainer scroll-smooth" ref={event}>
+      <div className="carouselCardContainer scroll-smooth" ref={event}  id="eventElementHelper">
         {isLoading ? (
           <div> Loading.... </div>
         ) : (

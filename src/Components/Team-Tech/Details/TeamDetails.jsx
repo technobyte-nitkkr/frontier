@@ -44,7 +44,7 @@ export default function TeamDetails() {
           Pre-final Year
         </button>
       </div>
-      <div ref={Ref} className="team-card-container">
+      <div ref={Ref} className="team-card-container scroll-smooth">
         {!isLoading && people ? (
           people.map((x, idx) => {
             return (

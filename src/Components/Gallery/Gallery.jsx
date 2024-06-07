@@ -30,7 +30,7 @@ const Gallery = () => {
 
   return (
     <>
-      <div className="mainContentGallery">
+      <div className="mainContentGallery" id="ContentGallery">
         <div className="GalleryList flex overflow-x-scroll scroll-smooth  pb-12" ref={scArr}>
           {
             GalleryArray.map((element,idx) => {
