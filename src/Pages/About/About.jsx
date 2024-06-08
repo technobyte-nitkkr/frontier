@@ -16,7 +16,9 @@ const About = () => {
         heading={"Checkout technobyte's Youtube channel"}
         element={
           <div>
-            <div className="video-responsive">
+            <div className="video-responsive" style={{
+              maxWidth: "100%"
+            }}>
               <iframe
                 width="560"
                 height="315"
