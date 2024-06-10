@@ -53,7 +53,7 @@ const Sponsors2 = () => {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="my-4 h-14 placeholder:px-3 px-2 w-full mr-0"
+                className="my-4 h-14 placeholder:px-3 px-2 w-full mr-0 text-black"
               />
               <div className="w-full">
                 <Button btnText={"Submit"} sty="h-[4rem] w-[90%] " />
