@@ -38,16 +38,17 @@ const Form = () => {
     // console.log(dialCode);
     try {
       await emailjs.send(
-        "service_5lzk86j",
-        "template_0i1kgqw",
+        "service_fsffmpr","template_d3ues63",
         {
-          ...formData,
-          phoneNumber: dialCode + " " + formData.phoneNumber,
+          name: formData.name,
+          phoneNumber: formData.phoneNumber,
+          dialCode: dialCode,
+          city : formData.city,
+          email: formData.email
         },
-        "LQgJoiy1g4e-Pe70y"
+        "tPp7ffxoxdcF1eUWj"
       );
       setBtnText("Submitted!");
-      // console.log("Form submitted successfully!");
     } catch (error) {
       setBtnText("Error!!.... retry?")
       console.error("Error submitting form:", error);

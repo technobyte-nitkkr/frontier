@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Button from "../Button/Button";
 import "./Sponsors.css";
+import emailjs from "emailjs-com";
 
 const Sponsors2 = () => {
   const [sponsors, setSponsors] = useState([]);
@@ -60,11 +61,24 @@ const Sponsors2 = () => {
                 className="my-4 h-14 placeholder:px-3 px-2 w-full mr-0 text-black"
               />
               <div className="w-full">
-                <Button btnText={btnText} sty="h-[4rem] w-[90%] " onClick={() => {
-                  setTxt("Submitting...");
-                  setTimeout(() => {
-                    setTxt("Submitted!");
-                  }, 2000);
+                <Button btnText={btnText} sty="h-[4rem] w-[90%] " onClick={async () => {
+                  if (email === "") setTxt("Enter email");
+                  else {
+                    setTxt("Submitting...");
+                    try {
+                      await emailjs.send(
+                        "service_fsffmpr", "template_bk1prys",
+                        {
+                          email: email
+                        },
+                        "tPp7ffxoxdcF1eUWj"
+                      );
+                      setTxt("Submitted!");
+                    } catch (error) {
+                      setTxt("Error!!.... retry?")
+                      console.error("Error submitting form:", error);
+                    }
+                  }
                 }} />
               </div>
             </div>
