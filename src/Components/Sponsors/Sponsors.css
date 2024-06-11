@@ -53,6 +53,11 @@
   line-height: 44px;
   margin-bottom: 1rem;
 }
+@media only screen and (max-width: 700px) {
+  .sponsorSectionTitle{
+      font-size: 20px;
+  }
+}
 
 .sponsorEmailInpContainer {
   display: flex;

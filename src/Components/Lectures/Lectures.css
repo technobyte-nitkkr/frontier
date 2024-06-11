@@ -83,7 +83,8 @@
   }
 
   .image {
-    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     border: 0.25rem solid #4C5EFF;
@@ -117,11 +118,4 @@
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
-  }
-
-  @media only screen and (max-width: 500px) {
-    .backGround {
-      min-width: 290px;
-      max-width: 290px;
-    }
   }

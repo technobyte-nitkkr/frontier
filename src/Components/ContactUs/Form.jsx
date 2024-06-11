@@ -15,6 +15,8 @@ const Form = () => {
 
   const [selectedCounty, setSelectedCounty] = useState("India");
 
+  const [btnText, setBtnText] = useState("Submit");
+
   const handleInputChange = (event, name) => {
     const { value } = event.target;
     setFormData((prevData) => ({
@@ -44,8 +46,10 @@ const Form = () => {
         },
         "LQgJoiy1g4e-Pe70y"
       );
+      setBtnText("Submitted!");
       // console.log("Form submitted successfully!");
     } catch (error) {
+      setBtnText("Error!!.... retry?")
       console.error("Error submitting form:", error);
     }
   };
@@ -53,7 +57,7 @@ const Form = () => {
   return (
     <form className="flex flex-col text-black sm:pr-4" onSubmit={handleSubmit}>
       <input
-        className="w-full bg-white my-4 h-12 placeholder:px-3 cursor-pointer px-2"
+        className="w-full bg-white my-1 md:my-4 h-12 placeholder:px-3 cursor-pointer px-2"
         type="text"
         placeholder="Your Name"
         value={formData.name}
@@ -62,14 +66,14 @@ const Form = () => {
       <input
         type="email"
         placeholder="Email*"
-        className="my-4 h-12 placeholder:px-3 cursor-pointer px-2"
+        className="my-1 md:my-4 h-12 placeholder:px-3 cursor-pointer px-2"
         value={formData.email}
         onChange={(event) => handleInputChange(event, "email")}
       ></input>
       <input
         type="text"
         placeholder="Current City*"
-        className="my-4 h-12 placeholder:px-3 cursor-pointer px-2"
+        className="my-1 md:my-4 h-12 placeholder:px-3 cursor-pointer px-2"
         value={formData.city}
         onChange={(event) => handleInputChange(event, "city")}
       ></input>
@@ -81,7 +85,7 @@ const Form = () => {
           />
         </div>
         <input
-          className="h-12 placeholder:px-3 my-4 md:mr-0 md:mx-6 w-full px-2"
+          className="h-12 placeholder:px-3 my-1 md:my-4 md:mr-0 md:mx-6 w-full px-2"
           type="tel"
           placeholder="Enter Your WhatsApp number"
           value={formData.phoneNumber}
@@ -90,11 +94,11 @@ const Form = () => {
       </div>
       <textarea
         placeholder="Please write your message here"
-        className=" h-32 resize-none my-4 placeholder:px-3 cursor-pointer px-2"
+        className=" h-32 resize-none my-1 md:my-4 placeholder:px-3 cursor-pointer px-2"
         onChange={(event) => handleInputChange(event, "message")}
       ></textarea>
       <div className="flex justify-center items-center h-[8rem]">
-        <Button btnText="Submit" sty="h-[4rem] w-full md:w-[12rem]" />
+        <Button btnText={btnText} sty="h-[4rem] w-full md:w-[12rem]" />
       </div>
     </form>
   );

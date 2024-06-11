@@ -6,6 +6,8 @@ import "./Sponsors.css";
 const Sponsors2 = () => {
   const [sponsors, setSponsors] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [btnText, setTxt] = useState("Submit");
+  const [email, setEmail] = useState("");
   useEffect(() => {
     axios.get("/sponsors").then((res) => {
       const sponsors = res.data.data.sponsors;
@@ -51,12 +53,19 @@ const Sponsors2 = () => {
             </p>
             <div className="sponsorEmailInpContainer flex flex-col md:flex-row">
               <input
+                value={email}
+                onChange={(e) => { setEmail(e.target.value); setTxt("Submit") }}
                 type="email"
                 placeholder="Email Address"
                 className="my-4 h-14 placeholder:px-3 px-2 w-full mr-0 text-black"
               />
               <div className="w-full">
-                <Button btnText={"Submit"} sty="h-[4rem] w-[90%] " />
+                <Button btnText={btnText} sty="h-[4rem] w-[90%] " onClick={() => {
+                  setTxt("Submitting...");
+                  setTimeout(() => {
+                    setTxt("Submitted!");
+                  }, 2000);
+                }} />
               </div>
             </div>
           </div>

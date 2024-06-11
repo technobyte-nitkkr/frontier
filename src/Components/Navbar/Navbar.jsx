@@ -24,7 +24,6 @@ export default function Navbar({  }) {
 
   return (
     <nav className="nav">
-      {/* <TimeLine show={isOpen} onClickOutside={closeOverlay} /> */}
       <Link to="/" className="logoLink">
         <img src={logo} alt="Technobyte" className="tb-logo" />
       </Link>

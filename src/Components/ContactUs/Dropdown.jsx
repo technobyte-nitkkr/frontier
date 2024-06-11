@@ -9,7 +9,7 @@ const Dropdown = ({ selectedCounty, handleCountyChange }) => {
   return (
     <div>
       <select
-        className="text-black h-12 my-4 w-full md:w-[15rem]"
+        className="text-black h-12 md:my-4 my-1 w-full md:w-[15rem]"
         id="drop"
         onChange={handleDropdownChange}
         value={selectedCounty}
