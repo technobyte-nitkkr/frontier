@@ -1,22 +1,52 @@
 [
     {
-        "imageUrl": "https://i.ibb.co/th5TZHJ/Aman-Kumar.jpg",
-        "name": "Aman",
-        "post": "Member"
-    },
-    {
-        "imageUrl": "https://i.ibb.co/hZX62xz/Anal-Singh.jpg",
-        "name": "Anal Singh",
-        "post": "Member"
+        "imageUrl": "https://i.ibb.co/0c9xRm6/Tushar.webp",
+        "name": "Tushar",
+        "post": "President"
     },
     {
         "imageUrl": "https://i.ibb.co/2N6s4GJ/anupma.jpg",
         "name": "Anupma",
-        "post": "Member"
+        "post": "Vice President"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/QXkhNWf/Tanisha.jpg",
+        "name": "Tanisha",
+        "post": "Secretary"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/r51SxJR/Ritwik.jpg",
+        "name": "Ritwik",
+        "post": "Joint Secretary"
     },
     {
         "imageUrl": "https://i.ibb.co/WHn9mrb/Arjit-Kedia.jpg",
         "name": "Arjit Kedia",
+        "post": "Media Head"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/0rkc0XN/Lalit-Gidwani.jpg",
+        "name": "Lalit Gidwani",
+        "post": "Sponsorship Head"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/LJgNN4y/dev.jpg",
+        "name": "Dev mahajan ",
+        "post": "Tech Head"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/th5TZHJ/Aman-Kumar.jpg",
+        "name": "Aman Kumar",
+        "post": "IP Head"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/wpkGx5W/Pooja.jpg",
+        "name": "Pooja Agarwal",
+        "post": "PR Head"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/hZX62xz/Anal-Singh.jpg",
+        "name": "Anal Singh",
         "post": "Member"
     },
     {
@@ -27,11 +57,6 @@
     {
         "imageUrl": "https://i.ibb.co/wp6f3yQ/Atul.jpg",
         "name": "Atul",
-        "post": "Member"
-    },
-    {
-        "imageUrl": "https://i.ibb.co/LJgNN4y/dev.jpg",
-        "name": "Dev mahajan ",
         "post": "Member"
     },
     {
@@ -55,11 +80,6 @@
         "post": "Member"
     },
     {
-        "imageUrl": "https://i.ibb.co/0rkc0XN/Lalit-Gidwani.jpg",
-        "name": "Lalit Gidwani",
-        "post": "Member"
-    },
-    {
         "imageUrl": "https://i.ibb.co/X2kS2yZ/Muruari.jpg",
         "name": "Murari Pandey",
         "post": "Member"
@@ -67,11 +87,6 @@
     {
         "imageUrl": "https://i.ibb.co/h7HfyjV/Palak.jpg",
         "name": "Palak",
-        "post": "Member"
-    },
-    {
-        "imageUrl": "https://i.ibb.co/wpkGx5W/Pooja.jpg",
-        "name": "Pooja Agarwal",
         "post": "Member"
     },
     {
@@ -85,18 +100,8 @@
         "post": "Member"
     },
     {
-        "imageUrl": "https://i.ibb.co/r51SxJR/Ritwik.jpg",
-        "name": "Ritwik",
-        "post": "Member"
-    },
-    {
         "imageUrl": "https://i.ibb.co/XY4C8WC/Ronak.jpg",
         "name": "Ronak Yadav ",
-        "post": "Member"
-    },
-    {
-        "imageUrl": "https://i.ibb.co/r68VhNM/SAHIL-BHATIA.jpg",
-        "name": "Sahil Bhatia",
         "post": "Member"
     },
     {
@@ -112,16 +117,6 @@
     {
         "imageUrl": "https://i.ibb.co/mGpq4fW/sparsh.jpg",
         "name": "Sparsh ",
-        "post": "Member"
-    },
-    {
-        "imageUrl": "https://i.ibb.co/QXkhNWf/Tanisha.jpg",
-        "name": "Tanisha",
-        "post": "Member"
-    },
-    {
-        "imageUrl": "https://i.ibb.co/0c9xRm6/Tushar.webp",
-        "name": "Tushar",
         "post": "Member"
     },
     {

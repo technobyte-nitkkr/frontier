@@ -21,8 +21,6 @@ const Dropdown = ({ selectedCounty, handleCountyChange }) => {
             value={country.name}
             selected={country.name === selectedCounty}
           >
-            <img src={country.emoji} alt={country.name}></img>
-            {country.emoji}
             {country.name}({country.dial_code})
           </option>
         ))}

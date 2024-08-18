@@ -22,9 +22,9 @@ const Sponsors = () => {
       ) : (
         <div id="sponsorElementHelper" className="sponsorsElementContainer">
             <div className="sponsorCarouselContainer">
-              {sponsors.slice(0,4).map((spons) => {
+              {sponsors.slice(0,4).map((spons,idx) => {
                 return (
-                  <div className="sponsorIcon">
+                  <div className="sponsorIcon" key={idx}>
                     {" "}
                     <a href={spons?.targetUrl}>
                       <img className="sponsorIcon" src={spons?.imageUrl} />{" "}

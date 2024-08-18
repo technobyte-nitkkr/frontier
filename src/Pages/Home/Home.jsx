@@ -1,9 +1,9 @@
-import { useEffect } from "react";
+import { useEffect,lazy,Suspense } from "react";
 import { useLocation } from "react-router-dom";
 import EventCarousel from "../../Components/Events/Carousel/EventCarousel";
 import Homecontainer from "../../Components/Homecontainer/Homecontainer";
 import HomePage from "../../Components/HomePage/HomePage";
-import Gallery from "../../Components/Gallery/Gallery";
+const Gallery = lazy(() => import('../../Components/Gallery/Gallery'));
 import Lecture from "../../Components/Lectures/Lectures";
 import Registration from "../../Components/Registration/Registration";
 import Sponsors2 from "../../Components/Sponsors/Sponsors2";
@@ -53,7 +53,11 @@ const Home = (props) => {
         heading={"About Technobyte"}
         element={<Registration showBtn={true} />}
       />
-      <Homecontainer heading={"Gallery"} element={<Gallery />} />
+      <Homecontainer heading={"Gallery"} element={
+        <Suspense fallback={<div>Loading...</div>}>
+          <Gallery />
+        </Suspense>
+      } />
       <Homecontainer heading={"Event Categories"} element={<EventCarousel />} />
       <Homecontainer heading={"Guest Lectures"} element={<Lecture />} />
       <Homecontainer heading={"Meet Our Sponsors"} element={<Sponsors2 />} />

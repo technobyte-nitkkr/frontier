@@ -8,14 +8,14 @@ import team2 from "./team2.json";
 export default function TeamDetails() {
   const [people, setPeople] = useState();
   const [isLoading, setIsLoading] = useState(false);
-  const [current, setCurrent] = useState("final-year");
+  const [current, setCurrent] = useState("25");
   const Ref = useRef();
 
   useEffect(() => {
     const getData = async () => {
       setIsLoading(true);
       await new Promise((resolve) => setTimeout(resolve, 1000));
-      current == "final-year" ? setPeople(team) : setPeople(team2);
+      current == "24" ? setPeople(team) : setPeople(team2);
       setIsLoading(false);
     };
     getData();
@@ -24,24 +24,24 @@ export default function TeamDetails() {
     <div className="team-details">
       <div className="team-links">
         <button
-          id={"final-year"}
+          id={"25"}
           onClick={() => {
-            setCurrent("final-year");
+            setCurrent("25");
           }}
           className="teams"
-          style={{ color: current == "final-year" ? "#4890ff" : "white" }}
+          style={{ color: current == "25" ? "#4890ff" : "white" }}
         >
-          Final Year
+          Batch'25
         </button>
         <button
-          id={"pre-final-year"}
+          id={"24"}
           onClick={() => {
-            setCurrent("pre-final-year");
+            setCurrent("24");
           }}
           className="teams"
-          style={{ color: current == "pre-final-year" ? "#4890ff" : "white" }}
+          style={{ color: current == "24" ? "#4890ff" : "white" }}
         >
-          Pre-final Year
+          Batch'24
         </button>
       </div>
       <div ref={Ref} className="team-card-container scroll-smooth">

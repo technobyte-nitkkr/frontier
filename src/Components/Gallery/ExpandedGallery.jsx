@@ -47,7 +47,7 @@ const GalleryBG = ({ pictures, setExpandedIndex, setExpandedView }) => {
   return (
     <div className="gallery-container">
       {
-        pictures.map((pic) => <GalleryImage pic={pic} setExpandedIndex={setExpandedIndex} setExpandedView={setExpandedView} />)
+        pictures.map((pic,idx) => <GalleryImage pic={pic} setExpandedIndex={setExpandedIndex} setExpandedView={setExpandedView} key={idx}/>)
       }
     </div>
   );

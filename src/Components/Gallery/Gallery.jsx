@@ -15,7 +15,7 @@ const Gallery = () => {
   const scArr = useRef();
   
   useEffect(()=>{
-    setInterval(()=>{
+    const interval = setInterval(() => {
       const elem = scArr.current;
       var next = 0;
       for(var i of elem.children){
@@ -25,7 +25,8 @@ const Gallery = () => {
       const childWidth = elem.scrollWidth  / elem.children.length;
       elem.scrollLeft = (elem.scrollLeft + childWidth) % elem.scrollWidth;
       if(elem.scrollLeft + elem.offsetWidth * 1.05 > elem.scrollWidth) elem.scrollLeft = 0;
-    }, 4000)
+    }, 4000);
+    return () => clearInterval(interval);
   }, [])
 
   return (

@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, Suspense, lazy } from 'react';
 import Gallery_bg from '/assets/Gallery/Gallery_bg_all.png'
 import './Gallery.css';
-import ExpandedGallery from './ExpandedGallery';
+
+const ExpandedGallery = lazy(() => import('./ExpandedGallery'));
+
 
 function GalleryComponent({item,className}) {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +21,9 @@ function GalleryComponent({item,className}) {
                 </h1>
             </div>
             {isOpen && (
-                <ExpandedGallery show={isOpen} onClickOutside={() => setIsOpen(false)} pictures={item.pictures} year={item.year} />
+                <Suspense fallback={<div>Loading...</div>}>
+                    <ExpandedGallery show={isOpen} onClickOutside={() => setIsOpen(false)} pictures={item.pictures} year={item.year} />
+                </Suspense>
             )}
         </>
     )

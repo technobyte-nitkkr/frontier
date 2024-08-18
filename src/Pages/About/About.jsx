@@ -1,7 +1,10 @@
-import Glimpses from "../../Components/About/Glimpses/Glimpses";
+import { lazy, Suspense } from "react";
 import Homecontainer from "../../Components/Homecontainer/Homecontainer";
 import Registration1 from "../../Components/Registration1/Registration1";
 import "./About.css";
+
+const Glimpses = lazy(() => import("../../Components/About/Glimpses/Glimpses"));
+
 
 const About = () => {
   return (
@@ -10,7 +13,10 @@ const About = () => {
       <Homecontainer heading={"About Technobyte"} element={<Registration1 />} />
       <Homecontainer
         heading={"Some glimpses from the past..."}
-        element={<Glimpses />}
+        element={
+          <Suspense fallback={<div>Loading...</div>}>
+            <Glimpses />   </Suspense>
+        }
       />
       <Homecontainer
         heading={"Checkout technobyte's Youtube channel"}
