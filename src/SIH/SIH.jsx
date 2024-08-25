@@ -6,19 +6,10 @@ import Experience from "./Experience";
 export default function SIH() {
   return (
     <>
+      <Hero />
+      <About />
+      <Experience />
+    </>
 
-    
-    
-        
-        <Hero/>
-        <About />
-        <Experience />
-       
-       
-    
-       
-  
-      </>
-      
   );
 }

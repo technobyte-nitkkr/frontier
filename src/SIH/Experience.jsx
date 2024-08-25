@@ -4,11 +4,8 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
 import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "./styles";
-
 import { SectionWrapper } from "./hoc";
 import { textVariant } from "./utils/motion";
 
@@ -22,7 +19,6 @@ const ExperienceCard = ({ experience }) => {
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
-     
     >
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
@@ -33,7 +29,6 @@ const ExperienceCard = ({ experience }) => {
           {experience.company_name}
         </p>
       </div>
-
       <ul className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => (
           <li
@@ -55,11 +50,11 @@ const Experience = () => {
       title: "Registration",
       company_name: "Internal Hackathon",
       iconBg: "#383E56",
-      date: "25th-27th August",
+      date: "25th-28th August",
       points: [
         "Participants must register for the hackathon.",
         "Ensure all required details are provided.",
-        "Registration closes on the 27th of August.",
+        "Registration closes on the 28th of August.",
       ],
     },
     {
@@ -107,7 +102,6 @@ const Experience = () => {
           SCHEDULE.
         </h2>
       </motion.div>
-
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
           {timeline.map((experience, index) => (

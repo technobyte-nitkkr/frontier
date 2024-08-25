@@ -1,13 +1,11 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "./styles";
-import { SectionWrapper } from "./hoc";
 import { fadeIn, textVariant } from "./utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='w-full md:w-[250px] lg:w-1/4'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -25,7 +23,6 @@ const ServiceCard = ({ index, title, icon }) => (
           alt={title}
           className='w-24 h-24 object-contain rounded-full'
         />
-
         <h3 className='text-white text-[20px] font-bold text-center'>
           {title}
         </h3>
@@ -66,7 +63,7 @@ const About = () => {
     },
     {
       title: "Miscellaneous",
-      icon: "data:image/png;base64,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"  
+      icon: "data:image/png;base64,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"
     },
     {
       title: "Space Technology",
@@ -77,25 +74,25 @@ const About = () => {
   return (
     <>
       <div className="mt-12 mx-auto">
-  <motion.div variants={textVariant()} className="flex justify-center">
-    <h2
-      className={`${styles.sectionHeadText} text-5xl font-extrabold text-white inline-block py-3 px-6 rounded-lg shadow-lg`}
-    >
-      Themes
-    </h2>
-  </motion.div>
+        <motion.div variants={textVariant()} className="flex justify-center">
+          <h2
+            className={`${styles.sectionHeadText} text-5xl font-extrabold text-white inline-block py-3 px-6 rounded-lg shadow-lg`}
+          >
+            Themes
+          </h2>
+        </motion.div>
 
-  <div className="mt-20 flex flex-wrap justify-center gap-10">
-    {themes.map((service, index) => (
-      <ServiceCard
-        key={service.title}
-        index={index}
-        title={service.title}
-        icon={service.icon}  // Pass the URL to the component
-      />
-    ))}
-  </div>
-</div>
+        <div className="mt-20 flex lg:flex-row flex-wrap justify-center gap-10">
+          {themes.map((service, index) => (
+            <ServiceCard
+              key={service.title}
+              index={index}
+              title={service.title}
+              icon={service.icon}  // Pass the URL to the component
+            />
+          ))}
+        </div>
+      </div>
 
     </>
   );
