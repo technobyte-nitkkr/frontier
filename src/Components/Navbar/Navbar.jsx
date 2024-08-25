@@ -40,6 +40,11 @@ export default function Navbar({  }) {
         style={{ visibility: isMenuOpen ? "visible" : "hidden" }}
       >
         <ul className="navMenus">
+        <li className="navbarItem">
+            <a href="/sih">
+              <span>SIH</span><sup className="text-red-600">new</sup>
+            </a>
+          </li>
           <li className="navbarItem">
             <Link to={{ pathname: "/", hash: "#events" }}>
               <span>EVENTS</span>

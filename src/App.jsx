@@ -9,6 +9,7 @@ import DevTeam from "./Pages/DevTeam/Team";
 import About from "./Pages/About/About";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import "./App.css";
+import SIH from "./SIH/SIH";
 
 const GCIDKeys = import.meta.env.VITE_GCID;
 
@@ -39,6 +40,7 @@ function App() {
               <Route path="/team" element={<Team />} />
               <Route path="/about" element={<About />} />
               <Route path="/dev" element={<DevTeam />} />
+              <Route path="/sih" element={<SIH />} />
             </Routes>
             <div>
               <Footer />
