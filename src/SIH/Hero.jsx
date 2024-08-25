@@ -5,7 +5,7 @@ import { styles } from "./styles";
 
 const Hero = () => {
   return (
-    <section className={`relative h-screen mx-auto`}>
+    <section className={`relative h-screen mt-4 mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -13,8 +13,10 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-           Why Participate in  <span className='text-[#915EFF]'>SIH??</span>
+           Smart India Hackathon  <span className='text-[#915EFF]'>2024</span>
           </h1>
+          <br></br>
+          <h2 className="text-white text-3xl font-bold">Why participate???</h2>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           Solve Real-World Challenges: <br className='sm:block hidden' />
           Make an impact with your innovative solutions. 🌍

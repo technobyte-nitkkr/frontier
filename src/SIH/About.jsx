@@ -76,20 +76,27 @@ const About = () => {
 
   return (
     <>
-      
-      <motion.div variants={textVariant()}>
-      <h2 className={styles.sectionHeadText}>Themes</h2>
-      </motion.div>
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {themes.map((service, index) => (
-          <ServiceCard
-            key={service.title}
-            index={index}
-            title={service.title}
-            icon={service.icon}  // Pass the URL to the component
-          />
-        ))}
-      </div>
+      <div className="mt-12 mx-auto">
+  <motion.div variants={textVariant()} className="flex justify-center">
+    <h2
+      className={`${styles.sectionHeadText} text-5xl font-extrabold text-white inline-block py-3 px-6 rounded-lg shadow-lg`}
+    >
+      Themes
+    </h2>
+  </motion.div>
+
+  <div className="mt-20 flex flex-wrap justify-center gap-10">
+    {themes.map((service, index) => (
+      <ServiceCard
+        key={service.title}
+        index={index}
+        title={service.title}
+        icon={service.icon}  // Pass the URL to the component
+      />
+    ))}
+  </div>
+</div>
+
     </>
   );
 };
