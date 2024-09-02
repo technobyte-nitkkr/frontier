@@ -12,7 +12,10 @@ const Hero = () => {
             Smart India Hackathon  <span className='text-[#915EFF]'>2024</span>
           </h1>
           <br></br>
-          <span className="text-slate-400 text-3xl font-bold">Register Here : </span> <a className="text-blue-600 text-2xl font-bold cursor-pointer" href={'https://forms.gle/6ZUmRqAUrgRh1KwL6'} target="_blank">Google Form</a>
+          <span className="text-slate-400 text-3xl font-bold">Register Here : </span> <span className="text-red-600 text-2xl font-bold cursor-not-allowed" target="_blank">Google Form</span>
+          <br/>
+          <br/>
+          <span className="text-slate-400 text-3xl font-bold">Results <sup className="text-red-600">new</sup> : </span> <a href={'https://www.instagram.com/technobyte_nitkkr/'}className="text-green-600 text-2xl font-bold cursor-pointer" target="_blank">check Out &#8599;</a>
           <br/>
           <br/>
           <h2 className="text-white text-3xl font-bold">Why participate???</h2>
