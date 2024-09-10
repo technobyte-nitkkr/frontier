@@ -59,7 +59,7 @@ const Shortlist = () => {
       </motion.div>
       <div className='mt-20 flex flex-wrap flex-row justify-around'>
         {teams.map((team, index) => (
-          <div key={`team-${index}`} className='flex justify-center items-center text-black bg-white hover:bg-green-200 w-1/5 h-14 m-2 text-sm cursor-pointer rounded-md font-bold tracking-wider'>
+          <div key={`team-${index}`} className='flex justify-center items-center text-black bg-white hover:bg-green-200 w-[250px] h-14 m-2 text-sm cursor-pointer rounded-md font-bold tracking-wider'>
             {team}
           </div>
         ))}
