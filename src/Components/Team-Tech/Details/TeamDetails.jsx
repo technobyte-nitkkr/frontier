@@ -2,8 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import "./TeamDetails.css";
 import "./TeamDetails.scss";
 import BouncingDotsLoader from "../Loader/Loader";
-import team from "./team.json";
-import team2 from "./team2.json";
+import team24 from "./team24.json";
+import team25 from "./team25.json";
+import team26 from "./team26.json"; // Upload images on https://imgbb.com/
 
 export default function TeamDetails() {
   const [people, setPeople] = useState();
@@ -15,7 +16,7 @@ export default function TeamDetails() {
     const getData = async () => {
       setIsLoading(true);
       await new Promise((resolve) => setTimeout(resolve, 1000));
-      current == "24" ? setPeople(team) : setPeople(team2);
+      current == "24" ? setPeople(team24) : current == "25" ?  setPeople(team25) : setPeople(team26);
       setIsLoading(false);
     };
     getData();
@@ -32,6 +33,16 @@ export default function TeamDetails() {
           style={{ color: current == "25" ? "#4890ff" : "white" }}
         >
           Batch'25
+        </button>
+        <button
+          id={"26"}
+          onClick={() => {
+            setCurrent("26");
+          }}
+          className="teams"
+          style={{ color: current == "26" ? "#4890ff" : "white" }}
+        >
+          Batch'26
         </button>
         <button
           id={"24"}
