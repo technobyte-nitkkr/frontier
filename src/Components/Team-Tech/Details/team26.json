@@ -1,12 +1,162 @@
 [
     {
-        "imageUrl": "https://i.ibb.co/0c9xRm6/Tushar.webp",
-        "name": "Tushar",
-        "post": "President"
+        "imageUrl": "https://i.ibb.co/xYjjhZc/abhishek.jpg",
+        "name": "Abhishek",
+        "post": "Member"
     },
     {
-        "imageUrl": "https://i.ibb.co/0c9xRm6/Tushar.webp",
-        "name": "Tushar",
-        "post": "President"
+        "imageUrl": "https://i.ibb.co/n1TztW8/anant.jpg",
+        "name": "Anant",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/3YV9RG1/ansh.jpg",
+        "name": "Ansh",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/PWgxgw1/arihant.jpg",
+        "name": "Arihant",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/zsQ6KmT/arjit.jpg",
+        "name": "Arjit",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/5hwSh5w/arunav.jpg",
+        "name": "Arunav",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/kDLGZty/bhumika.jpg",
+        "name": "Bhumika",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/QvQ8stn/debatreya.jpg",
+        "name": "Debatreya",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/SBxZHzj/harsh.png",
+        "name": "Harsh Taneja",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/ZV0fKkp/harshit.jpg",
+        "name": "Harshit Anand",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/513y0Kc/harshsinha1.jpg",
+        "name": "Harsh Sinha",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/pWC3Tts/himanshu.png",
+        "name": "Himanshu",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "  https://i.ibb.co/0mvvy4Z/jahanvi.jpg",
+        "name": "Jahanvi",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/MsCdc93/jaykumar.jpg",
+        "name": "Jay Kumar",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/fXqVHwW/khushi-jpeg.jpg",
+        "name": "Khushi",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/6bwb4Bn/lakshay1.jpg",
+        "name": "Lakshay",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/Wts9ZNP/lipika.jpg",
+        "name": "Lipika",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/pRvY6zB/manvi.jpg",
+        "name": "Manvi",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/bdqm7Rk/mayank.jpg",
+        "name": "Mayank",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/6tkRLLP/mohammadkashif1.jpg",
+        "name": "Mohammad Kashif",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/25Ckf6k/riddhi.jpg",
+        "name": "Riddhi",
+        "post": "Member"
+    },
+    {
+        "imageUrl": " https://i.ibb.co/Jm56dKN/rupesh.jpg",
+        "name": "Rupesh",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/jyNPJKM/saanvi.png",
+        "name": "Saanvi",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/nzzrf57/saksham.jpg",
+        "name": "Saksham",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/djwTctY/shobita.jpg",
+        "name": "Shobita",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/YNk84f1/somya.jpg",
+        "name": "Somya",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/XSCS3kN/swastik.jpg",
+        "name": "Swastik",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/PD19Ptj/utkarsh.jpg",
+        "name": "Utkarsh",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/8xJfHHn/utsav.jpg",
+        "name": "Utsav",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/j5g5wPT/vaibhav.jpg",
+        "name": "Vaibhav",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/vxjcpP9/vanshika.jpg",
+        "name": "Vanshika",
+        "post": "Member"
+    },
+    {
+        "imageUrl": "https://i.ibb.co/GnJmQdj/yashraj.jpg",
+        "name": "Yashraj",
+        "post": "Member"
     }
 ]
