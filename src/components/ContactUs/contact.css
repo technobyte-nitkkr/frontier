@@ -1,0 +1,130 @@
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  width: 100%;
+}
+
+/* Two-column layout */
+.contact-body {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* Info panel */
+.contact-info-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.contact-info-heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #e6edf3;
+  margin: 0;
+}
+
+.contact-info-desc {
+  font-size: 0.875rem;
+  color: #8b949e;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.contact-info-icon {
+  font-size: 1.05rem;
+  color: #a5b4fc;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.contact-info-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #484f58;
+  margin-bottom: 3px;
+}
+
+.contact-info-value {
+  font-size: 0.9rem;
+  color: #c9d1d9;
+}
+
+.contact-link {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-link:hover {
+  color: #a5b4fc;
+}
+
+/* Social buttons */
+.contact-socials-row {
+  display: flex;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+.contact-social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #8b949e;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.contact-social-btn:hover {
+  background: rgba(88, 101, 242, 0.18);
+  border-color: rgba(88, 101, 242, 0.45);
+  color: #a5b4fc;
+  transform: translateY(-2px);
+}
+
+/* Form panel */
+.contact-form-panel {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px 28px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-body {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

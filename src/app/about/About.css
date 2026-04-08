@@ -1,0 +1,15 @@
+.aboutPageContainer {
+  margin-top: 12rem;
+  margin-left: 1rem;
+}
+.buttons {
+  width: fit-content;
+  margin: auto;
+}
+
+
+@media (max-width:900px){
+  .aboutPageContainer{
+    margin-top: 8rem;
+  }
+}

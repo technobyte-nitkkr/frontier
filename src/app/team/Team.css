@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto+Slab:wght@700&display=swap");
+
+.team-heading {
+  font-size: 6vh;
+  color: white;
+  text-align: center;
+  font-family: "segoeui", cursive !important;
+  margin: 5vh;
+}
+
+.team {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 8rem;
+  font-family: 'segoeui', cursive !important;
+  font-weight: 500;
+}
+
+.headingGL {
+  font-size: 4.5rem !important;
+  margin: 40px auto !important;
+  width: 100% !important;
+  font-weight: 700 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 20px rgba(145, 94, 255, 0.3);
+  letter-spacing: -0.1rem;
+}
+
+.sub-team-heading {
+  color: #fff;
+  font-size: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 550px) {
+  .team-heading {
+    margin-top: 30px;
+    font-size: 3em;
+    letter-spacing: 1px;
+  }
+
+  .sub-team-heading {
+    width: 90%;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}

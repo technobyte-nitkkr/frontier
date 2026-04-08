@@ -1,0 +1,142 @@
+/* ===== CONTACT FORM (dark-glass theme) ===== */
+.cf-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Row helpers */
+.cf-row {
+  display: flex;
+  gap: 16px;
+}
+
+.cf-row-2 > .cf-field {
+  flex: 1;
+  min-width: 0;
+}
+
+.cf-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Label */
+.cf-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6e7681;
+}
+
+/* Base input / textarea */
+.cf-input {
+  width: 100%;
+  height: 46px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #e6edf3;
+  font-size: 0.9rem;
+  padding: 0 14px;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.cf-input::placeholder {
+  color: #3d444d;
+}
+
+.cf-input:focus {
+  border-color: rgba(165, 180, 252, 0.55);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(165, 180, 252, 0.1);
+}
+
+/* Textarea override */
+.cf-textarea {
+  height: auto;
+  resize: vertical;
+  padding: 12px 14px;
+  line-height: 1.6;
+}
+
+/* Phone row */
+.cf-phone-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.cf-dropdown-wrap {
+  flex-shrink: 0;
+}
+
+
+.cf-phone-input {
+  flex: 1;
+}
+
+/* Submit button */
+.cf-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.35);
+  margin-top: 4px;
+}
+
+.cf-submit:hover:not(:disabled) {
+  opacity: 0.92;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.45);
+}
+
+.cf-submit:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.cf-submit--done {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
+  cursor: default;
+  opacity: 0.9;
+}
+
+.cf-submit:disabled {
+  cursor: default;
+}
+
+.cf-arrow {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cf-row-2 {
+    flex-direction: column;
+  }
+
+  .cf-phone-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

@@ -1,0 +1,128 @@
+.event-container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.event-list{
+    border-right: 1px solid #30363D;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    overflow-y: overlay;
+}
+
+.events{
+    border-bottom: 1px solid #30363D;
+}
+
+.event-top{
+    height: 60px;
+    border-bottom: 1px solid #30363D;
+    text-align: center;
+}
+
+.event-names{
+    display: flex;
+    align-items: flex-end;
+    border: none;
+}
+
+.event-names div{
+    background-color: #0D1117;
+    width: fit-content;
+    padding: 10px 30px;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-left: 20px;
+}
+
+.event-list-cont{
+    background-color: #0D1117;
+    height: calc(100% - 60px);
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.event-indivi{
+    display: flex;
+    color: #868587;
+    align-items: center;
+}
+
+.event-indivi div{
+    color: white;
+    background-color: #ffffff1b;
+    margin-left: 10px;
+    padding: 5px 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.event-indivi-active div{
+    background-color: #7ee78757;
+}
+
+.event-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.event-description{
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+.event-description::-webkit-scrollbar{
+    display: none;
+}
+
+.event-name img{
+    height: 25px;
+}
+
+.event-details{
+    background-color: #040D21;
+    height: calc(100% - 60px);
+    color: white;
+    overflow-y: scroll;
+}
+
+.event-details div{
+    padding: 20px;
+    text-align: justify;
+}
+
+.event-details img{
+    width: 85%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.event-heading{
+    text-align: center !important;
+    color: white;
+    font-family: "JetBrainsMono";
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+@media (orientation: portrait) {
+    .event-container{
+        grid-template-rows: 25% 75%;
+        grid-auto-flow: column;
+        grid-template-columns: 100%;
+    }
+    .event-terminal-container{
+        display: none;
+    }
+    .event-list{
+        grid-template-rows: 100%;
+    }
+    .event-list-cont{
+        height: 100%;
+    }
+}

@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --background-image-mainbg: url('/assets/Main-background.svg');
+  
+  /* Brand Typography */
+  --font-jetbrains: "JetBrainsMono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-segoe: "segoeui", ui-sans-serif, system-ui, sans-serif;
+  --font-backto1982: "backto1982", cursive;
+  --font-sportsball: "sportsball", sans-serif;
+
+  /* Consistency tokens */
+  --radius-xl: 1rem;
+  --color-brand-primary: #915EFF;
+  --color-brand-secondary: #00DBDE;
+  --nav-clearance: 154px;
+}
+
+@font-face {
+  font-family: "segoeui";
+  src: url('/assets/fonts/Segoe/SegoeUI.ttf');
+}
+
+@font-face {
+  font-family: "backto1982";
+  src: url('/assets/fonts/Back-To-1982/BACKTO1982.TTF');
+}
+
+@font-face {
+  font-family: "sportsball";
+  src: url('/assets/fonts/sportsball/Sportsball.ttf');
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Global Reset & Base Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-clearance);
+}
+
+html, body {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar Utility - Tailwind scrollbar-none is great, but fallback here */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/** reactjs-popup overrides */
+.popup-arrow {
+  display: none;
+}
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 5px;
+}
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.placeholder-img {
+    background-image: url('/assets/placeholder.png') !important;
+    background-size: contain;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Global Container Utility to ensure consistent horizontal padding */
+.main-container {
+  @apply max-w-[1800px] mx-auto px-[3%] sm:px-[4%] md:px-[5%] lg:px-[5%];
+}
+
+/* Section Wrapper for vertical spacing consistency */
+.section-wrapper {
+  @apply py-12 md:py-20 lg:py-32;
+}

@@ -1,0 +1,153 @@
+/* ===== SPONSORS ===== */
+.sponsors-loading {
+  color: #8b949e;
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+
+.sponsors-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Flat wrapping logo grid */
+.sponsors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.sponsor-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 90px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 10px 14px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  overflow: visible;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border-color: rgba(165, 180, 252, 0.4);
+}
+
+.sponsor-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.sponsor-badge {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(26, 26, 46, 0.95);
+  border: 1px solid rgba(165, 180, 252, 0.25);
+  color: #a5b4fc;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* CTA strip */
+.sponsors-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 24px 28px;
+  flex-wrap: wrap;
+}
+
+.sponsors-cta-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+.sponsors-cta-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #e6edf3;
+  margin: 0 0 4px;
+}
+
+.sponsors-cta-sub {
+  font-size: 0.85rem;
+  color: #8b949e;
+  margin: 0;
+}
+
+.sponsors-cta-form {
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+.sponsors-email-input {
+  height: 44px;
+  width: 240px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-right: none;
+  border-radius: 0;
+  color: #e6edf3;
+  font-size: 0.9rem;
+  padding: 0 14px;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+  flex-shrink: 0;
+}
+
+.sponsors-email-input::placeholder {
+  color: #484f58;
+}
+
+.sponsors-email-input:focus {
+  border-color: rgba(165, 180, 252, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Button override — flush with the email input */
+.sponsors-btn {
+  margin: 0 !important;
+  border-radius: 0 !important;
+  height: 44px !important;
+  padding: 0 20px;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .sponsor-card {
+    width: 130px;
+    height: 75px;
+  }
+
+  .sponsors-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sponsors-email-input {
+    width: 100%;
+  }
+}

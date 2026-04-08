@@ -1,0 +1,159 @@
+.modal-superContainer{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.modal-cover{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;  
+    background-color: rgba(0, 0, 0, 0.708);
+}
+
+.modal-container{
+    width: 80vw;
+    height: 90vh;
+    background-color: #161B22;
+    margin: 5vh 10vw;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.modal-top{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #30363D;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.modal-body{
+    display: grid;
+    grid-template-columns: 80px calc(100% - 80px);
+    height: calc(100% - 60px);
+}
+
+.modal-menu{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+    border-right: 1px solid #30363D;
+    position: relative;
+}
+
+.modal-menu img{
+    cursor: pointer;
+}
+
+.modal-menu-items{
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    color: white;
+    background-color: #161B22;
+    height: 100%;
+    padding: 0px 20px 0px 0px;
+    border-right: 1px solid #30363D;
+    transition: all 0.25s linear;
+    overflow: hidden;
+    width: 150px;
+}
+
+.modal-menu-items div{
+    padding: 5px;
+    width: 150px;
+    cursor: pointer;
+}
+
+/* search bar */
+.modal-search-container{
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #30363D;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #0D1117;
+    color: white;
+    font-size: 14px;
+}
+
+
+.modal-search-container div{
+    margin: 0px 30px;
+}
+
+.modal-search-container div::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-search-img{
+    height: 13px;
+}
+
+.modal-top-img{
+    height: 15px;
+}
+
+.modal-content{
+    max-height: 100%;
+    min-height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-container{
+        width: 90vw;
+        height: 80vh;
+        margin: 5vh 5vw;
+    }
+    .modal-top{
+        padding: 10px 10px;
+        height: 50px;
+    }
+    .modal-search-container{
+        height: 30px;
+        max-width: 80%;
+    }
+    .modal-search-img{
+        height: 12px;
+    }
+    .modal-top-img{
+        height: 10px;
+    }
+    .modal-search-container{
+        width: fit-content;
+        font-size: 12px;
+    }
+    .modal-search-container div{
+        margin: 0px 10px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .modal-body{
+        height: calc(100% - 50px);
+        grid-template-columns: 40px calc(100% - 40px);
+    }
+
+    .modal-menu img{
+        height: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .modal-container{
+        width: 90vw;
+        margin: 5vh 5vw;
+    }
+}

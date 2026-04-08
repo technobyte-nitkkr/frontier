@@ -1,0 +1,16 @@
+.inpBoxContainer {
+  width: 100%;
+}
+
+.inpBox {
+  width: 100%;
+  font-family: 'JetBrainsMono';
+  background-color: #ffffff;
+  padding: 16px;
+}
+
+@media only screen and (max-width: 700px) {
+  .inpBox{
+    padding: 14px;
+  }
+}

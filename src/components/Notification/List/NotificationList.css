@@ -1,0 +1,29 @@
+.notificationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px;
+  margin: 8px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.recentNotifs {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "JetBrainsMono";
+  padding-left: 8px;
+}
+
+@media only screen and (max-width: 700px) {
+    .notificationContainer{
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .recentNotifs {
+      font-size: 18px;
+    }
+}
